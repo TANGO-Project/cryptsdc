@@ -1,7 +1,7 @@
 # cryptdsdc
-&copy; University of Leeds 2018
+&copy; James Dyer and University of Leeds 2018
 
-Crypto library for uropean Project TANGO (http://tango-project.eu).
+Crypto library for European Project TANGO (http://tango-project.eu).
 
 ## Description
 This C++ library provides symmetric cryptographic algorithms which produce ciphertexts that may be computed on. Each algorithm is implemented by two classes: an Encrypter, which implements the key generation and encryption algorithms, and Decrypter, which implements the decryption algorithm.
