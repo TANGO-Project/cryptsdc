@@ -10,7 +10,7 @@ This C++ library provides symmetric cryptographic algorithms which produce ciphe
 To compile:
 
 ```shell
-cd cryptango
+cd cryptsdc
 make
 ```
 This builds a static and shared library in the `lib/` subfolder. You may need to edit the `LDFLAGS` make variable in `Makefile` to target the correct system library directories for your flavour of Linux.
