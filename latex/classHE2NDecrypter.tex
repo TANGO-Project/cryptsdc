@@ -1,0 +1,96 @@
+\hypertarget{classHE2NDecrypter}{}\section{H\+E2\+N\+Decrypter Class Reference}
+\label{classHE2NDecrypter}\index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
+
+
+{\ttfamily \#include $<$H\+E2\+N\+Decrypter.\+h$>$}
+
+
+
+Inheritance diagram for H\+E2\+N\+Decrypter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classHE2NDecrypter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for H\+E2\+N\+Decrypter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classHE2NDecrypter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classHE2NDecrypter_a92b463d8e18d2f06d0680528edfd49c4}{read\+Secrets\+From\+J\+S\+ON} (std\+::string \&json) override
+\item 
+N\+T\+L\+::\+ZZ \hyperlink{classHE2NDecrypter_aa92e4ddf62a0f2c4199722983e28b0c9}{decrypt} (N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p \&ciphertext) override
+\item 
+\hyperlink{classHE2NDecrypter_a079e13cfaf35e9f4b32d4301960c6816}{H\+E2\+N\+Decrypter} ()
+\item 
+virtual \hyperlink{classHE2NDecrypter_a5e6c617b905b370d5186e7d4193fd5b8}{$\sim$\+H\+E2\+N\+Decrypter} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\+T\+L\+::\+ZZ \hyperlink{classHE2NDecrypter_ad3233fd048ef07f31e4f40ea941cce91}{kappa}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHE2NDecrypter_a079e13cfaf35e9f4b32d4301960c6816}\label{classHE2NDecrypter_a079e13cfaf35e9f4b32d4301960c6816}} 
+\index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}!H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
+\index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}!H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
+\subsubsection{\texorpdfstring{H\+E2\+N\+Decrypter()}{HE2NDecrypter()}}
+{\footnotesize\ttfamily H\+E2\+N\+Decrypter\+::\+H\+E2\+N\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHE2NDecrypter_a5e6c617b905b370d5186e7d4193fd5b8}\label{classHE2NDecrypter_a5e6c617b905b370d5186e7d4193fd5b8}} 
+\index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}!````~H\+E2\+N\+Decrypter@{$\sim$\+H\+E2\+N\+Decrypter}}
+\index{````~H\+E2\+N\+Decrypter@{$\sim$\+H\+E2\+N\+Decrypter}!H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
+\subsubsection{\texorpdfstring{$\sim$\+H\+E2\+N\+Decrypter()}{~HE2NDecrypter()}}
+{\footnotesize\ttfamily H\+E2\+N\+Decrypter\+::$\sim$\+H\+E2\+N\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classHE2NDecrypter_aa92e4ddf62a0f2c4199722983e28b0c9}\label{classHE2NDecrypter_aa92e4ddf62a0f2c4199722983e28b0c9}} 
+\index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily N\+T\+L\+::\+ZZ H\+E2\+N\+Decrypter\+::decrypt (\begin{DoxyParamCaption}\item[{N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p \&}]{ciphertext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{Decipher$<$ N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
+
+\mbox{\Hypertarget{classHE2NDecrypter_a92b463d8e18d2f06d0680528edfd49c4}\label{classHE2NDecrypter_a92b463d8e18d2f06d0680528edfd49c4}} 
+\index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}!read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}}
+\index{read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}!H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
+\subsubsection{\texorpdfstring{read\+Secrets\+From\+J\+S\+O\+N()}{readSecretsFromJSON()}}
+{\footnotesize\ttfamily void H\+E2\+N\+Decrypter\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$<$ N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classHE2NDecrypter_ad3233fd048ef07f31e4f40ea941cce91}\label{classHE2NDecrypter_ad3233fd048ef07f31e4f40ea941cce91}} 
+\index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}!kappa@{kappa}}
+\index{kappa@{kappa}!H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
+\subsubsection{\texorpdfstring{kappa}{kappa}}
+{\footnotesize\ttfamily N\+T\+L\+::\+ZZ H\+E2\+N\+Decrypter\+::kappa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{HE2NDecrypter_8h}{H\+E2\+N\+Decrypter.\+h}\item 
+src/\hyperlink{HE2NDecrypter_8cpp}{H\+E2\+N\+Decrypter.\+cpp}\end{DoxyCompactItemize}

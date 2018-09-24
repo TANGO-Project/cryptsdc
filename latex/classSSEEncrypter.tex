@@ -1,0 +1,210 @@
+\hypertarget{classSSEEncrypter}{}\section{S\+S\+E\+Encrypter Class Reference}
+\label{classSSEEncrypter}\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+
+
+{\ttfamily \#include $<$S\+S\+E\+Encrypter.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+E\+Encrypter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classSSEEncrypter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+S\+E\+Encrypter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classSSEEncrypter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classSSEEncrypter_ab13571d2a7a8875226bf8901cd080949}{encrypt} (std\+::string \&plaintext) override
+\item 
+std\+::string \hyperlink{classSSEEncrypter_a54465123beb996dc0410c8f8c4ec2ba6}{encrypt\+To\+Hex} (std\+::string \&plaintext)
+\item 
+Crypto\+P\+P\+::\+Sec\+Byte\+Block \hyperlink{classSSEEncrypter_ae9562054f00a5f9899b019568cad2338}{get\+Key} ()
+\item 
+Crypto\+P\+P\+::\+Sec\+Byte\+Block \hyperlink{classSSEEncrypter_a0fa90c40369bc916f61e870fd39a42c2}{get\+Key\+Gen\+Key} ()
+\item 
+std\+::string \hyperlink{classSSEEncrypter_a741ba1ef98a1f1b294ed3904738cd888}{get\+Hex\+Encoded\+Key} ()
+\item 
+std\+::string \hyperlink{classSSEEncrypter_abaefa48cff26cad49a17a1bd2586dbc7}{get\+Hex\+Encoded\+Key\+Gen\+Key} ()
+\item 
+Crypto\+P\+P\+::\+Sec\+Byte\+Block \hyperlink{classSSEEncrypter_ae81cc103149e1db15c577c8b474f9217}{create\+Search\+Key} (std\+::string \&word)
+\item 
+std\+::string \hyperlink{classSSEEncrypter_a09dac9d519550e0375f0f677aab69bfb}{create\+Hex\+Encoded\+Search\+Key} (std\+::string \&word)
+\item 
+std\+::string \hyperlink{classSSEEncrypter_a70e01b58fe0de0931cdb00ee97ee4af9}{write\+Secrets\+To\+J\+S\+ON} () override
+\item 
+\hyperlink{classSSEEncrypter_a4b45442fa1025d82ed499241da4796bf}{S\+S\+E\+Encrypter} ()
+\item 
+\hyperlink{classSSEEncrypter_ae109735e8bf9f5a32d6f481e6d208bd8}{S\+S\+E\+Encrypter} (std\+::string \&secrets)
+\item 
+virtual \hyperlink{classSSEEncrypter_a249d1527f2d370c693534c3d435a522a}{$\sim$\+S\+S\+E\+Encrypter} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSSEEncrypter_a668394973e3f574ca24588c5a0763f5f}{decode\+Hex\+String} (std\+::string \&hex\+String, Crypto\+P\+P\+::\+Sec\+Byte\+Block \&bytes)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Crypto\+P\+P\+::\+Sec\+Byte\+Block \hyperlink{classSSEEncrypter_a35dbd89d8820118bf71d6cd483e64ac8}{key\+Gen\+Key}
+\item 
+Crypto\+P\+P\+::\+Sec\+Byte\+Block \hyperlink{classSSEEncrypter_ab6fb0b44e024a40077fd44672ad78f28}{key\+Gen\+IV}
+\item 
+Crypto\+P\+P\+::\+Sec\+Byte\+Block \hyperlink{classSSEEncrypter_afc4ceb0c421614857c18b152a976c29a}{key}
+\item 
+Crypto\+P\+P\+::\+C\+B\+C\+\_\+\+Mode$<$ Crypto\+P\+P\+::\+A\+ES $>$\+::Encryption \hyperlink{classSSEEncrypter_a2831d301099a3d5548479996e3c8cf4b}{e}
+\item 
+Crypto\+P\+P\+::\+C\+B\+C\+\_\+\+Mode$<$ Crypto\+P\+P\+::\+A\+ES $>$\+::Encryption \hyperlink{classSSEEncrypter_a43d9006f3db0d57fa02069977946335b}{keygen}
+\item 
+Crypto\+P\+P\+::\+C\+M\+AC$<$ Crypto\+P\+P\+::\+A\+ES $>$ \hyperlink{classSSEEncrypter_a67939726bb84cb761535642873c3b10c}{mac}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSEEncrypter_a4b45442fa1025d82ed499241da4796bf}\label{classSSEEncrypter_a4b45442fa1025d82ed499241da4796bf}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{S\+S\+E\+Encrypter()}{SSEEncrypter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily S\+S\+E\+Encrypter\+::\+S\+S\+E\+Encrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_ae109735e8bf9f5a32d6f481e6d208bd8}\label{classSSEEncrypter_ae109735e8bf9f5a32d6f481e6d208bd8}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{S\+S\+E\+Encrypter()}{SSEEncrypter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily S\+S\+E\+Encrypter\+::\+S\+S\+E\+Encrypter (\begin{DoxyParamCaption}\item[{std\+::string \&}]{secrets }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_a249d1527f2d370c693534c3d435a522a}\label{classSSEEncrypter_a249d1527f2d370c693534c3d435a522a}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!````~S\+S\+E\+Encrypter@{$\sim$\+S\+S\+E\+Encrypter}}
+\index{````~S\+S\+E\+Encrypter@{$\sim$\+S\+S\+E\+Encrypter}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{$\sim$\+S\+S\+E\+Encrypter()}{~SSEEncrypter()}}
+{\footnotesize\ttfamily S\+S\+E\+Encrypter\+::$\sim$\+S\+S\+E\+Encrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSEEncrypter_a09dac9d519550e0375f0f677aab69bfb}\label{classSSEEncrypter_a09dac9d519550e0375f0f677aab69bfb}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!create\+Hex\+Encoded\+Search\+Key@{create\+Hex\+Encoded\+Search\+Key}}
+\index{create\+Hex\+Encoded\+Search\+Key@{create\+Hex\+Encoded\+Search\+Key}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{create\+Hex\+Encoded\+Search\+Key()}{createHexEncodedSearchKey()}}
+{\footnotesize\ttfamily std\+::string S\+S\+E\+Encrypter\+::create\+Hex\+Encoded\+Search\+Key (\begin{DoxyParamCaption}\item[{std\+::string \&}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_ae81cc103149e1db15c577c8b474f9217}\label{classSSEEncrypter_ae81cc103149e1db15c577c8b474f9217}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!create\+Search\+Key@{create\+Search\+Key}}
+\index{create\+Search\+Key@{create\+Search\+Key}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{create\+Search\+Key()}{createSearchKey()}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block S\+S\+E\+Encrypter\+::create\+Search\+Key (\begin{DoxyParamCaption}\item[{std\+::string \&}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_a668394973e3f574ca24588c5a0763f5f}\label{classSSEEncrypter_a668394973e3f574ca24588c5a0763f5f}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!decode\+Hex\+String@{decode\+Hex\+String}}
+\index{decode\+Hex\+String@{decode\+Hex\+String}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{decode\+Hex\+String()}{decodeHexString()}}
+{\footnotesize\ttfamily void S\+S\+E\+Encrypter\+::decode\+Hex\+String (\begin{DoxyParamCaption}\item[{std\+::string \&}]{hex\+String,  }\item[{Crypto\+P\+P\+::\+Sec\+Byte\+Block \&}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSSEEncrypter_ab13571d2a7a8875226bf8901cd080949}\label{classSSEEncrypter_ab13571d2a7a8875226bf8901cd080949}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::string S\+S\+E\+Encrypter\+::encrypt (\begin{DoxyParamCaption}\item[{std\+::string \&}]{plaintext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$<$ std\+::string, std\+::string $>$}.
+
+\mbox{\Hypertarget{classSSEEncrypter_a54465123beb996dc0410c8f8c4ec2ba6}\label{classSSEEncrypter_a54465123beb996dc0410c8f8c4ec2ba6}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!encrypt\+To\+Hex@{encrypt\+To\+Hex}}
+\index{encrypt\+To\+Hex@{encrypt\+To\+Hex}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{encrypt\+To\+Hex()}{encryptToHex()}}
+{\footnotesize\ttfamily std\+::string S\+S\+E\+Encrypter\+::encrypt\+To\+Hex (\begin{DoxyParamCaption}\item[{std\+::string \&}]{plaintext }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_a741ba1ef98a1f1b294ed3904738cd888}\label{classSSEEncrypter_a741ba1ef98a1f1b294ed3904738cd888}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!get\+Hex\+Encoded\+Key@{get\+Hex\+Encoded\+Key}}
+\index{get\+Hex\+Encoded\+Key@{get\+Hex\+Encoded\+Key}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{get\+Hex\+Encoded\+Key()}{getHexEncodedKey()}}
+{\footnotesize\ttfamily std\+::string S\+S\+E\+Encrypter\+::get\+Hex\+Encoded\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_abaefa48cff26cad49a17a1bd2586dbc7}\label{classSSEEncrypter_abaefa48cff26cad49a17a1bd2586dbc7}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!get\+Hex\+Encoded\+Key\+Gen\+Key@{get\+Hex\+Encoded\+Key\+Gen\+Key}}
+\index{get\+Hex\+Encoded\+Key\+Gen\+Key@{get\+Hex\+Encoded\+Key\+Gen\+Key}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{get\+Hex\+Encoded\+Key\+Gen\+Key()}{getHexEncodedKeyGenKey()}}
+{\footnotesize\ttfamily std\+::string S\+S\+E\+Encrypter\+::get\+Hex\+Encoded\+Key\+Gen\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_ae9562054f00a5f9899b019568cad2338}\label{classSSEEncrypter_ae9562054f00a5f9899b019568cad2338}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{get\+Key()}{getKey()}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block S\+S\+E\+Encrypter\+::get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_a0fa90c40369bc916f61e870fd39a42c2}\label{classSSEEncrypter_a0fa90c40369bc916f61e870fd39a42c2}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!get\+Key\+Gen\+Key@{get\+Key\+Gen\+Key}}
+\index{get\+Key\+Gen\+Key@{get\+Key\+Gen\+Key}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{get\+Key\+Gen\+Key()}{getKeyGenKey()}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block S\+S\+E\+Encrypter\+::get\+Key\+Gen\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEEncrypter_a70e01b58fe0de0931cdb00ee97ee4af9}\label{classSSEEncrypter_a70e01b58fe0de0931cdb00ee97ee4af9}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!write\+Secrets\+To\+J\+S\+ON@{write\+Secrets\+To\+J\+S\+ON}}
+\index{write\+Secrets\+To\+J\+S\+ON@{write\+Secrets\+To\+J\+S\+ON}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{write\+Secrets\+To\+J\+S\+O\+N()}{writeSecretsToJSON()}}
+{\footnotesize\ttfamily std\+::string S\+S\+E\+Encrypter\+::write\+Secrets\+To\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classEncipher_a27d3efa1e364c1f0d7def65454c61b85}{Encipher$<$ std\+::string, std\+::string $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSSEEncrypter_a2831d301099a3d5548479996e3c8cf4b}\label{classSSEEncrypter_a2831d301099a3d5548479996e3c8cf4b}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!e@{e}}
+\index{e@{e}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+C\+B\+C\+\_\+\+Mode$<$Crypto\+P\+P\+::\+A\+ES$>$\+::Encryption S\+S\+E\+Encrypter\+::e\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSSEEncrypter_afc4ceb0c421614857c18b152a976c29a}\label{classSSEEncrypter_afc4ceb0c421614857c18b152a976c29a}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!key@{key}}
+\index{key@{key}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block S\+S\+E\+Encrypter\+::key\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSSEEncrypter_a43d9006f3db0d57fa02069977946335b}\label{classSSEEncrypter_a43d9006f3db0d57fa02069977946335b}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!keygen@{keygen}}
+\index{keygen@{keygen}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{keygen}{keygen}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+C\+B\+C\+\_\+\+Mode$<$Crypto\+P\+P\+::\+A\+ES$>$\+::Encryption S\+S\+E\+Encrypter\+::keygen\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSSEEncrypter_ab6fb0b44e024a40077fd44672ad78f28}\label{classSSEEncrypter_ab6fb0b44e024a40077fd44672ad78f28}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!key\+Gen\+IV@{key\+Gen\+IV}}
+\index{key\+Gen\+IV@{key\+Gen\+IV}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{key\+Gen\+IV}{keyGenIV}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block S\+S\+E\+Encrypter\+::key\+Gen\+IV\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSSEEncrypter_a35dbd89d8820118bf71d6cd483e64ac8}\label{classSSEEncrypter_a35dbd89d8820118bf71d6cd483e64ac8}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!key\+Gen\+Key@{key\+Gen\+Key}}
+\index{key\+Gen\+Key@{key\+Gen\+Key}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{key\+Gen\+Key}{keyGenKey}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block S\+S\+E\+Encrypter\+::key\+Gen\+Key\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSSEEncrypter_a67939726bb84cb761535642873c3b10c}\label{classSSEEncrypter_a67939726bb84cb761535642873c3b10c}} 
+\index{S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}!mac@{mac}}
+\index{mac@{mac}!S\+S\+E\+Encrypter@{S\+S\+E\+Encrypter}}
+\subsubsection{\texorpdfstring{mac}{mac}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+C\+M\+AC$<$Crypto\+P\+P\+::\+A\+ES$>$ S\+S\+E\+Encrypter\+::mac\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{SSEEncrypter_8h}{S\+S\+E\+Encrypter.\+h}\item 
+src/\hyperlink{SSEEncrypter_8cpp}{S\+S\+E\+Encrypter.\+cpp}\end{DoxyCompactItemize}

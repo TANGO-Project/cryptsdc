@@ -1,0 +1,74 @@
+\hypertarget{classDecipher}{}\section{Decipher$<$ C, P $>$ Class Template Reference}
+\label{classDecipher}\index{Decipher$<$ C, P $>$@{Decipher$<$ C, P $>$}}
+
+
+{\ttfamily \#include $<$Decipher.\+hpp$>$}
+
+
+
+Inheritance diagram for Decipher$<$ C, P $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classDecipher__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDecipher_a08c3ce832e3884da97f36fcfac6f70db}{Decipher} ()
+\item 
+virtual \hyperlink{classDecipher_af1489f4e86a28217bdee9cf16d983faf}{$\sim$\+Decipher} ()
+\item 
+virtual void \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{read\+Secrets\+From\+J\+S\+ON} (std\+::string \&string)=0
+\item 
+virtual P \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{decrypt} (C \&ciphertext)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDecipher_a08c3ce832e3884da97f36fcfac6f70db}\label{classDecipher_a08c3ce832e3884da97f36fcfac6f70db}} 
+\index{Decipher@{Decipher}!Decipher@{Decipher}}
+\index{Decipher@{Decipher}!Decipher@{Decipher}}
+\subsubsection{\texorpdfstring{Decipher()}{Decipher()}}
+{\footnotesize\ttfamily template$<$typename C, typename P$>$ \\
+\hyperlink{classDecipher}{Decipher}$<$ C, P $>$\+::\hyperlink{classDecipher}{Decipher} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDecipher_af1489f4e86a28217bdee9cf16d983faf}\label{classDecipher_af1489f4e86a28217bdee9cf16d983faf}} 
+\index{Decipher@{Decipher}!````~Decipher@{$\sim$\+Decipher}}
+\index{````~Decipher@{$\sim$\+Decipher}!Decipher@{Decipher}}
+\subsubsection{\texorpdfstring{$\sim$\+Decipher()}{~Decipher()}}
+{\footnotesize\ttfamily template$<$typename C, typename P$>$ \\
+virtual \hyperlink{classDecipher}{Decipher}$<$ C, P $>$\+::$\sim$\hyperlink{classDecipher}{Decipher} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}\label{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}} 
+\index{Decipher@{Decipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Decipher@{Decipher}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily template$<$typename C, typename P$>$ \\
+virtual P \hyperlink{classDecipher}{Decipher}$<$ C, P $>$\+::decrypt (\begin{DoxyParamCaption}\item[{C \&}]{ciphertext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classSSEDecrypter_afc1522b78aed502f8ca94163fc030ffa}{S\+S\+E\+Decrypter}, \hyperlink{classPolyACDDecrypter_a96626f2c267d9cc4b18ed25cb584d982}{Poly\+A\+C\+D\+Decrypter}, \hyperlink{classDETDecrypter_ac317ce154d64eb1fce4450c2b03a12d9}{D\+E\+T\+Decrypter}, \hyperlink{classGACDDecrypter_a92f6afd3d0a43dd5538cf6a83398ee33}{G\+A\+C\+D\+Decrypter}, \hyperlink{classHE1NDecrypter_a8e49ff8292a76884f328c566f4d1b646}{H\+E1\+N\+Decrypter}, \hyperlink{classHE2NDecrypter_aa92e4ddf62a0f2c4199722983e28b0c9}{H\+E2\+N\+Decrypter}, \hyperlink{classHE1Decrypter_a28cc03e8a37f321b8f805cc04b2e69e0}{H\+E1\+Decrypter}, and \hyperlink{classHE2Decrypter_a766f96cb2277fd3e4af59ca44a32d519}{H\+E2\+Decrypter}.
+
+\mbox{\Hypertarget{classDecipher_a39aea002012130201e12a8fa7d84dda5}\label{classDecipher_a39aea002012130201e12a8fa7d84dda5}} 
+\index{Decipher@{Decipher}!read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}}
+\index{read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}!Decipher@{Decipher}}
+\subsubsection{\texorpdfstring{read\+Secrets\+From\+J\+S\+O\+N()}{readSecretsFromJSON()}}
+{\footnotesize\ttfamily template$<$typename C, typename P$>$ \\
+virtual void \hyperlink{classDecipher}{Decipher}$<$ C, P $>$\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classSSEDecrypter_a1bdc685b8ea9c5bcc2b29f0c9a3ca7bf}{S\+S\+E\+Decrypter}, \hyperlink{classPolyACDDecrypter_a55e7f81c6d8d10e00e072547ac68239a}{Poly\+A\+C\+D\+Decrypter}, \hyperlink{classGACDDecrypter_a7634cc069e61c1a3cf2443fed7c2b15f}{G\+A\+C\+D\+Decrypter}, \hyperlink{classDETDecrypter_a8e32703400ead9c35a80549b011307d7}{D\+E\+T\+Decrypter}, \hyperlink{classHE1NDecrypter_a323f074a37cb4ebfbcfca4b6bdfb6737}{H\+E1\+N\+Decrypter}, \hyperlink{classHE2NDecrypter_a92b463d8e18d2f06d0680528edfd49c4}{H\+E2\+N\+Decrypter}, \hyperlink{classHE1Decrypter_af60ccc6d0afe7555a9d1468ad7047733}{H\+E1\+Decrypter}, and \hyperlink{classHE2Decrypter_a9cf1a6eae2667f6e891237589c4eeda0}{H\+E2\+Decrypter}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Decipher_8hpp}{Decipher.\+hpp}\end{DoxyCompactItemize}

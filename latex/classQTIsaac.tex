@@ -1,0 +1,166 @@
+\hypertarget{classQTIsaac}{}\section{Q\+T\+Isaac$<$ A\+L\+P\+HA, T $>$ Class Template Reference}
+\label{classQTIsaac}\index{Q\+T\+Isaac$<$ A\+L\+P\+H\+A, T $>$@{Q\+T\+Isaac$<$ A\+L\+P\+H\+A, T $>$}}
+
+
+{\ttfamily \#include $<$isaac.\+hpp$>$}
+
+
+
+Collaboration diagram for Q\+T\+Isaac$<$ A\+L\+P\+HA, T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classQTIsaac__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structQTIsaac_1_1randctx}{randctx}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classQTIsaac_a2f9d908d12a5725146e161998b733233a44174520f740123b364728ca92b3dc97}{N} = (1$<$$<$A\+L\+P\+HA)
+ \}
+\item 
+typedef unsigned char \hyperlink{classQTIsaac_a1f78939d0806ed6006253a9ead8052b3}{byte}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQTIsaac_afbf292ab78e041bd2bbd5066241d88c3}{Q\+T\+Isaac} (T a=0, T b=0, T c=0)
+\item 
+virtual \hyperlink{classQTIsaac_ab0dfe7af413f019311ec43aec83a0592}{$\sim$\+Q\+T\+Isaac} (void)
+\item 
+T \hyperlink{classQTIsaac_a43a34ab9819572127d4f13e7344b2a95}{rand} (void)
+\item 
+virtual void \hyperlink{classQTIsaac_a5d1004b08f22ef74794597d139ca31b7}{randinit} (\hyperlink{structQTIsaac_1_1randctx}{randctx} $\ast$ctx, bool b\+Use\+Seed)
+\item 
+virtual void \hyperlink{classQTIsaac_ae8ec04439ce5f24bb3b337065f9148a9}{srand} (T a=0, T b=0, T c=0, T $\ast$s=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classQTIsaac_aa92e5e94f65d61e9395664dc5d2cf9b3}{isaac} (\hyperlink{structQTIsaac_1_1randctx}{randctx} $\ast$ctx)
+\item 
+T \hyperlink{classQTIsaac_a4b1bca72fa71e1ee79c285047e55a469}{ind} (T $\ast$mm, T x)
+\item 
+void \hyperlink{classQTIsaac_a97aee0e8269aa92acc9237dff6a8a370}{rngstep} (T mix, T \&a, T \&b, T $\ast$\&mm, T $\ast$\&m, T $\ast$\&m2, T $\ast$\&r, T \&x, T \&y)
+\item 
+virtual void \hyperlink{classQTIsaac_a9eb2ef09b2864b5b2b0406b7d0236ade}{shuffle} (T \&a, T \&b, T \&c, T \&d, T \&e, T \&f, T \&g, T \&h)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structQTIsaac_1_1randctx}{randctx} \hyperlink{classQTIsaac_a7eb189761ac0cd7dea189572e544cb9a}{m\+\_\+rc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classQTIsaac_a1f78939d0806ed6006253a9ead8052b3}\label{classQTIsaac_a1f78939d0806ed6006253a9ead8052b3}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!byte@{byte}}
+\index{byte@{byte}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{byte}{byte}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA = (8), class T = I\+S\+A\+A\+C\+\_\+\+I\+NT$>$ \\
+typedef unsigned char \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::\hyperlink{classQTIsaac_a1f78939d0806ed6006253a9ead8052b3}{byte}}
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classQTIsaac_a2f9d908d12a5725146e161998b733233}\label{classQTIsaac_a2f9d908d12a5725146e161998b733233}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA = (8), class T = I\+S\+A\+A\+C\+\_\+\+I\+NT$>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N@{N}!Q\+T\+Isaac@{Q\+T\+Isaac}}\index{Q\+T\+Isaac@{Q\+T\+Isaac}!N@{N}}}\mbox{\Hypertarget{classQTIsaac_a2f9d908d12a5725146e161998b733233a44174520f740123b364728ca92b3dc97}\label{classQTIsaac_a2f9d908d12a5725146e161998b733233a44174520f740123b364728ca92b3dc97}} 
+N&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classQTIsaac_afbf292ab78e041bd2bbd5066241d88c3}\label{classQTIsaac_afbf292ab78e041bd2bbd5066241d88c3}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{Q\+T\+Isaac()}{QTIsaac()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+\hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::\hyperlink{classQTIsaac}{Q\+T\+Isaac} (\begin{DoxyParamCaption}\item[{T}]{a = {\ttfamily 0},  }\item[{T}]{b = {\ttfamily 0},  }\item[{T}]{c = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classQTIsaac_ab0dfe7af413f019311ec43aec83a0592}\label{classQTIsaac_ab0dfe7af413f019311ec43aec83a0592}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!````~Q\+T\+Isaac@{$\sim$\+Q\+T\+Isaac}}
+\index{````~Q\+T\+Isaac@{$\sim$\+Q\+T\+Isaac}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{$\sim$\+Q\+T\+Isaac()}{~QTIsaac()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+\hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::$\sim$\hyperlink{classQTIsaac}{Q\+T\+Isaac} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classQTIsaac_a4b1bca72fa71e1ee79c285047e55a469}\label{classQTIsaac_a4b1bca72fa71e1ee79c285047e55a469}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!ind@{ind}}
+\index{ind@{ind}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{ind()}{ind()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+T \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::ind (\begin{DoxyParamCaption}\item[{T $\ast$}]{mm,  }\item[{T}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classQTIsaac_aa92e5e94f65d61e9395664dc5d2cf9b3}\label{classQTIsaac_aa92e5e94f65d61e9395664dc5d2cf9b3}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!isaac@{isaac}}
+\index{isaac@{isaac}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{isaac()}{isaac()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+void \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::isaac (\begin{DoxyParamCaption}\item[{\hyperlink{structQTIsaac_1_1randctx}{randctx} $\ast$}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classQTIsaac_a43a34ab9819572127d4f13e7344b2a95}\label{classQTIsaac_a43a34ab9819572127d4f13e7344b2a95}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!rand@{rand}}
+\index{rand@{rand}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{rand()}{rand()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+T \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::rand (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classQTIsaac_a5d1004b08f22ef74794597d139ca31b7}\label{classQTIsaac_a5d1004b08f22ef74794597d139ca31b7}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!randinit@{randinit}}
+\index{randinit@{randinit}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{randinit()}{randinit()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+void \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::randinit (\begin{DoxyParamCaption}\item[{\hyperlink{structQTIsaac_1_1randctx}{randctx} $\ast$}]{ctx,  }\item[{bool}]{b\+Use\+Seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classQTIsaac_a97aee0e8269aa92acc9237dff6a8a370}\label{classQTIsaac_a97aee0e8269aa92acc9237dff6a8a370}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!rngstep@{rngstep}}
+\index{rngstep@{rngstep}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{rngstep()}{rngstep()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+void \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::rngstep (\begin{DoxyParamCaption}\item[{T}]{mix,  }\item[{T \&}]{a,  }\item[{T \&}]{b,  }\item[{T $\ast$\&}]{mm,  }\item[{T $\ast$\&}]{m,  }\item[{T $\ast$\&}]{m2,  }\item[{T $\ast$\&}]{r,  }\item[{T \&}]{x,  }\item[{T \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classQTIsaac_a9eb2ef09b2864b5b2b0406b7d0236ade}\label{classQTIsaac_a9eb2ef09b2864b5b2b0406b7d0236ade}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{shuffle()}{shuffle()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+void \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::shuffle (\begin{DoxyParamCaption}\item[{T \&}]{a,  }\item[{T \&}]{b,  }\item[{T \&}]{c,  }\item[{T \&}]{d,  }\item[{T \&}]{e,  }\item[{T \&}]{f,  }\item[{T \&}]{g,  }\item[{T \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classQTIsaac_ae8ec04439ce5f24bb3b337065f9148a9}\label{classQTIsaac_ae8ec04439ce5f24bb3b337065f9148a9}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!srand@{srand}}
+\index{srand@{srand}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{srand()}{srand()}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA, class T $>$ \\
+void \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::srand (\begin{DoxyParamCaption}\item[{T}]{a = {\ttfamily 0},  }\item[{T}]{b = {\ttfamily 0},  }\item[{T}]{c = {\ttfamily 0},  }\item[{T $\ast$}]{s = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classQTIsaac_a7eb189761ac0cd7dea189572e544cb9a}\label{classQTIsaac_a7eb189761ac0cd7dea189572e544cb9a}} 
+\index{Q\+T\+Isaac@{Q\+T\+Isaac}!m\+\_\+rc@{m\+\_\+rc}}
+\index{m\+\_\+rc@{m\+\_\+rc}!Q\+T\+Isaac@{Q\+T\+Isaac}}
+\subsubsection{\texorpdfstring{m\+\_\+rc}{m\_rc}}
+{\footnotesize\ttfamily template$<$int A\+L\+P\+HA = (8), class T = I\+S\+A\+A\+C\+\_\+\+I\+NT$>$ \\
+\hyperlink{structQTIsaac_1_1randctx}{randctx} \hyperlink{classQTIsaac}{Q\+T\+Isaac}$<$ A\+L\+P\+HA, T $>$\+::m\+\_\+rc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{isaac_8hpp}{isaac.\+hpp}\end{DoxyCompactItemize}

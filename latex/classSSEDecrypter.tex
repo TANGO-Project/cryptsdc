@@ -1,0 +1,130 @@
+\hypertarget{classSSEDecrypter}{}\section{S\+S\+E\+Decrypter Class Reference}
+\label{classSSEDecrypter}\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+
+
+{\ttfamily \#include $<$S\+S\+E\+Decrypter.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+E\+Decrypter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classSSEDecrypter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+S\+E\+Decrypter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classSSEDecrypter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSSEDecrypter_a3ae3f44a17d8b2abb66252d5dee2bf92}{S\+S\+E\+Decrypter} ()
+\item 
+virtual \hyperlink{classSSEDecrypter_ab99776ce887ce3a992a21def645baf26}{$\sim$\+S\+S\+E\+Decrypter} ()
+\item 
+void \hyperlink{classSSEDecrypter_a1bdc685b8ea9c5bcc2b29f0c9a3ca7bf}{read\+Secrets\+From\+J\+S\+ON} (std\+::string \&json)
+\item 
+std\+::string \hyperlink{classSSEDecrypter_afc1522b78aed502f8ca94163fc030ffa}{decrypt} (std\+::string \&ciphertext)
+\item 
+void \hyperlink{classSSEDecrypter_afb19d398b4862298a831a020d61ffef7}{set\+Key} (Crypto\+P\+P\+::\+Sec\+Byte\+Block \&\hyperlink{classSSEDecrypter_a05c8a6317f2de2cfd37c5474d616d16a}{key})
+\item 
+void \hyperlink{classSSEDecrypter_a86d8cc2754814cfe59ee69ddf900b1f4}{set\+Key} (std\+::string \&hex\+Encoded\+Key)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSSEDecrypter_a4be8d581100ecdbe9a8b75c29f65800c}{decode\+Hex\+String} (std\+::string \&hex\+String, Crypto\+P\+P\+::\+Sec\+Byte\+Block \&bytes)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Crypto\+P\+P\+::\+Sec\+Byte\+Block \hyperlink{classSSEDecrypter_a05c8a6317f2de2cfd37c5474d616d16a}{key}
+\item 
+Crypto\+P\+P\+::\+C\+B\+C\+\_\+\+Mode$<$ Crypto\+P\+P\+::\+A\+ES $>$\+::Decryption \hyperlink{classSSEDecrypter_a339c0a434bd2a434b548d9d9e6d6762c}{d}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSEDecrypter_a3ae3f44a17d8b2abb66252d5dee2bf92}\label{classSSEDecrypter_a3ae3f44a17d8b2abb66252d5dee2bf92}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{S\+S\+E\+Decrypter()}{SSEDecrypter()}}
+{\footnotesize\ttfamily S\+S\+E\+Decrypter\+::\+S\+S\+E\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEDecrypter_ab99776ce887ce3a992a21def645baf26}\label{classSSEDecrypter_ab99776ce887ce3a992a21def645baf26}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!````~S\+S\+E\+Decrypter@{$\sim$\+S\+S\+E\+Decrypter}}
+\index{````~S\+S\+E\+Decrypter@{$\sim$\+S\+S\+E\+Decrypter}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{$\sim$\+S\+S\+E\+Decrypter()}{~SSEDecrypter()}}
+{\footnotesize\ttfamily S\+S\+E\+Decrypter\+::$\sim$\+S\+S\+E\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSEDecrypter_a4be8d581100ecdbe9a8b75c29f65800c}\label{classSSEDecrypter_a4be8d581100ecdbe9a8b75c29f65800c}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!decode\+Hex\+String@{decode\+Hex\+String}}
+\index{decode\+Hex\+String@{decode\+Hex\+String}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{decode\+Hex\+String()}{decodeHexString()}}
+{\footnotesize\ttfamily void S\+S\+E\+Decrypter\+::decode\+Hex\+String (\begin{DoxyParamCaption}\item[{std\+::string \&}]{hex\+String,  }\item[{Crypto\+P\+P\+::\+Sec\+Byte\+Block \&}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSSEDecrypter_afc1522b78aed502f8ca94163fc030ffa}\label{classSSEDecrypter_afc1522b78aed502f8ca94163fc030ffa}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::string S\+S\+E\+Decrypter\+::decrypt (\begin{DoxyParamCaption}\item[{std\+::string \&}]{ciphertext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{Decipher$<$ std\+::string, std\+::string $>$}.
+
+\mbox{\Hypertarget{classSSEDecrypter_a1bdc685b8ea9c5bcc2b29f0c9a3ca7bf}\label{classSSEDecrypter_a1bdc685b8ea9c5bcc2b29f0c9a3ca7bf}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}}
+\index{read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{read\+Secrets\+From\+J\+S\+O\+N()}{readSecretsFromJSON()}}
+{\footnotesize\ttfamily void S\+S\+E\+Decrypter\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$<$ std\+::string, std\+::string $>$}.
+
+\mbox{\Hypertarget{classSSEDecrypter_afb19d398b4862298a831a020d61ffef7}\label{classSSEDecrypter_afb19d398b4862298a831a020d61ffef7}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{set\+Key()}{setKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void S\+S\+E\+Decrypter\+::set\+Key (\begin{DoxyParamCaption}\item[{Crypto\+P\+P\+::\+Sec\+Byte\+Block \&}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSSEDecrypter_a86d8cc2754814cfe59ee69ddf900b1f4}\label{classSSEDecrypter_a86d8cc2754814cfe59ee69ddf900b1f4}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{set\+Key()}{setKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void S\+S\+E\+Decrypter\+::set\+Key (\begin{DoxyParamCaption}\item[{std\+::string \&}]{hex\+Encoded\+Key }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSSEDecrypter_a339c0a434bd2a434b548d9d9e6d6762c}\label{classSSEDecrypter_a339c0a434bd2a434b548d9d9e6d6762c}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!d@{d}}
+\index{d@{d}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+C\+B\+C\+\_\+\+Mode$<$Crypto\+P\+P\+::\+A\+ES$>$\+::Decryption S\+S\+E\+Decrypter\+::d\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSSEDecrypter_a05c8a6317f2de2cfd37c5474d616d16a}\label{classSSEDecrypter_a05c8a6317f2de2cfd37c5474d616d16a}} 
+\index{S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}!key@{key}}
+\index{key@{key}!S\+S\+E\+Decrypter@{S\+S\+E\+Decrypter}}
+\subsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block S\+S\+E\+Decrypter\+::key\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{SSEDecrypter_8h}{S\+S\+E\+Decrypter.\+h}\item 
+src/\hyperlink{SSEDecrypter_8cpp}{S\+S\+E\+Decrypter.\+cpp}\end{DoxyCompactItemize}
