@@ -98,8 +98,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8e49ff8292a76884f328c566f4d1b646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa5f1ecf0f7e0dcc3ea6e0073ac5e3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHE1NDecrypter.html#a4aa5f1ecf0f7e0dcc3ea6e0073ac5e3a">HE1NDecrypter</a> ()</td></tr>
 <tr class="separator:a4aa5f1ecf0f7e0dcc3ea6e0073ac5e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46f33e40dfebb158ac2525ec04e244a9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHE1NDecrypter.html#a46f33e40dfebb158ac2525ec04e244a9">~HE1NDecrypter</a> ()</td></tr>
-<tr class="separator:a46f33e40dfebb158ac2525ec04e244a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d3f1b8d0012b99d12d24c0cc69d87e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHE1NDecrypter.html#ae9d3f1b8d0012b99d12d24c0cc69d87e">~HE1NDecrypter</a> ()</td></tr>
+<tr class="separator:ae9d3f1b8d0012b99d12d24c0cc69d87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classHOMDecipher"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classHOMDecipher')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classHOMDecipher.html">HOMDecipher&lt; NTL::ZZ_p, NTL::ZZ &gt;</a></td></tr>
 <tr class="memitem:ab98e34714b534c4e02d08d952befa62b inherit pub_methods_classHOMDecipher"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHOMDecipher.html#ab98e34714b534c4e02d08d952befa62b">HOMDecipher</a> ()</td></tr>
 <tr class="separator:ab98e34714b534c4e02d08d952befa62b inherit pub_methods_classHOMDecipher"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +128,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">HE1NDecrypter::HE1NDecrypter </td>
@@ -136,12 +139,17 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a46f33e40dfebb158ac2525ec04e244a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46f33e40dfebb158ac2525ec04e244a9">&#9670;&nbsp;</a></span>~HE1NDecrypter()</h2>
+<a id="ae9d3f1b8d0012b99d12d24c0cc69d87e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d3f1b8d0012b99d12d24c0cc69d87e">&#9670;&nbsp;</a></span>~HE1NDecrypter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +158,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HE1NDecrypter::~HE1NDecrypter </td>
+          <td class="memname">virtual HE1NDecrypter::~HE1NDecrypter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -158,7 +166,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -189,6 +197,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Decrypts a ciphertext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ciphertext</td><td>Ciphertext value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Plaintext value </dd></dl>
 
 <p>Implements <a class="el" href="classDecipher.html#ac6b8c369eda2d7e17fa90cb594cf41b6">Decipher&lt; NTL::ZZ_p, NTL::ZZ &gt;</a>.</p>
 
@@ -207,7 +222,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void HE1NDecrypter::readSecretsFromJSON </td>
           <td>(</td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>json</em></td><td>)</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -217,6 +232,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Reads the cipher secrets in from a JSON string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>JSON string </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classDecipher.html#a39aea002012130201e12a8fa7d84dda5">Decipher&lt; NTL::ZZ_p, NTL::ZZ &gt;</a>.</p>
 
@@ -237,6 +258,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set the secret parameters <code>p</code> and <code>kappa</code> from the given vector. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>A vector </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -260,6 +287,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A secret cipher parameter </p>
 
 </div>
 </div>

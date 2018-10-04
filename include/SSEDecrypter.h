@@ -19,9 +19,20 @@
 
 class SSEDecrypter: public Decipher<std::string,std::string> {
 private:
+	/**
+	 * The cipher key
+	 */
 	CryptoPP::SecByteBlock key;
+	/**
+	 * The decryption cipher (AES in CBC mode)
+	 */
 	CryptoPP::CBC_Mode<CryptoPP::AES>::Decryption d;
 
+	/**
+	 * Decode a hexadecimal string and place the result in \c bytes
+	 * @param hexString A hexadecimal string
+	 * @param bytes A byte array
+	 */
 	void decodeHexString(std::string& hexString, CryptoPP::SecByteBlock& bytes);
 public:
 	SSEDecrypter();
@@ -29,7 +40,15 @@ public:
 
 	void readSecretsFromJSON(std::string& json);
 	std::string decrypt(std::string& ciphertext);
+	/**
+	 * Set they cipher key
+	 * @param key Byte array
+	 */
 	void setKey(CryptoPP::SecByteBlock& key);
+	/**
+	 * Set the cipher key
+	 * @param hexEncodedKey Hexadecimal encoded string
+	 */
 	void setKey(std::string& hexEncodedKey);
 };
 

@@ -4,6 +4,9 @@
 #include "HE1NEncrypter.h"
 #include "Random.h"
 
+/**
+ * Default destructor
+ */
 HE1NEncrypter::~HE1NEncrypter()
 {
 	delete kappamod;

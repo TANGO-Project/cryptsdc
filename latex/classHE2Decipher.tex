@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for H\+E2\+Decipher\+:
-\nopagebreak
+Inheritance diagram for H\+E2\+Decipher\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for H\+E2\+Decipher\+:
 \end{figure}
 
 
-Collaboration diagram for H\+E2\+Decipher\+:
-\nopagebreak
+Collaboration diagram for H\+E2\+Decipher\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -64,6 +62,14 @@ N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p $\ast$ \hyperlink{classHE2Decipher_a08f53cc484
 \subsubsection{\texorpdfstring{decrypt\+From\+String()}{decryptFromString()}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ H\+E2\+Decipher\+::decrypt\+From\+String (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str }\end{DoxyParamCaption})}
 
+Auxiliary method to decrypt a string respresentation of the 2-\/vector ciphertext 
+\begin{DoxyParams}{Parameters}
+{\em str} & A string respresentation of the ciphertext \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A multiprecision integer 
+\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
@@ -73,13 +79,13 @@ N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p $\ast$ \hyperlink{classHE2Decipher_a08f53cc484
 \subsubsection{\texorpdfstring{gamma}{gamma}}
 {\footnotesize\ttfamily N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p$\ast$ H\+E2\+Decipher\+::gamma\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classHE2Decipher_ae77640302cf735f4b9b3a74d9da87563}\label{classHE2Decipher_ae77640302cf735f4b9b3a74d9da87563}} 
+The decryption vector. This is a pointer to avoid gamma being initialised mod zero \mbox{\Hypertarget{classHE2Decipher_ae77640302cf735f4b9b3a74d9da87563}\label{classHE2Decipher_ae77640302cf735f4b9b3a74d9da87563}} 
 \index{H\+E2\+Decipher@{H\+E2\+Decipher}!modulus@{modulus}}
 \index{modulus@{modulus}!H\+E2\+Decipher@{H\+E2\+Decipher}}
 \subsubsection{\texorpdfstring{modulus}{modulus}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ H\+E2\+Decipher\+::modulus\hspace{0.3cm}{\ttfamily [protected]}}
 
-
+The public modulus for modular arithmetic. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

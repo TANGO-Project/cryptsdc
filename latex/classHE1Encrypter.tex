@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for H\+E1\+Encrypter\+:
-\nopagebreak
+Inheritance diagram for H\+E1\+Encrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for H\+E1\+Encrypter\+:
 \end{figure}
 
 
-Collaboration diagram for H\+E1\+Encrypter\+:
-\nopagebreak
+Collaboration diagram for H\+E1\+Encrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -37,7 +35,7 @@ std\+::string \hyperlink{classHE1Encrypter_a05627c66faf89c133a24fa7bb4553ef2}{wr
 \item 
 \hyperlink{classHE1Encrypter_a3cce07a63783a523afcf6905e2df4b93}{H\+E1\+Encrypter} (int n, int d, int rho)
 \item 
-virtual \hyperlink{classHE1Encrypter_aac874cc80eb19b455bd1ead547cf2b15}{$\sim$\+H\+E1\+Encrypter} ()
+virtual \hyperlink{classHE1Encrypter_ae9419b3ea61b96731501a9979f878131}{$\sim$\+H\+E1\+Encrypter} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -49,17 +47,33 @@ virtual \hyperlink{classHE1Encrypter_aac874cc80eb19b455bd1ead547cf2b15}{$\sim$\+
 \subsubsection{\texorpdfstring{H\+E1\+Encrypter()}{HE1Encrypter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily H\+E1\+Encrypter\+::\+H\+E1\+Encrypter (\begin{DoxyParamCaption}\item[{int}]{lambda,  }\item[{int}]{eta }\end{DoxyParamCaption})}
 
+Initialise cipher by generating cipher parameters such that {\ttfamily p} is a {\ttfamily lambda} bit prime and {\ttfamily q} is an {\ttfamily eta} bit prime. The public modulus for arithmetic operations on ciphertexts is {\ttfamily pq} 
+\begin{DoxyParams}{Parameters}
+{\em lambda} & Bit length of secret modulus {\ttfamily p} (security parameter) \\
+\hline
+{\em eta} & Bit length of secret prime {\ttfamily q}. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classHE1Encrypter_a3cce07a63783a523afcf6905e2df4b93}\label{classHE1Encrypter_a3cce07a63783a523afcf6905e2df4b93}} 
 \index{H\+E1\+Encrypter@{H\+E1\+Encrypter}!H\+E1\+Encrypter@{H\+E1\+Encrypter}}
 \index{H\+E1\+Encrypter@{H\+E1\+Encrypter}!H\+E1\+Encrypter@{H\+E1\+Encrypter}}
 \subsubsection{\texorpdfstring{H\+E1\+Encrypter()}{HE1Encrypter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily H\+E1\+Encrypter\+::\+H\+E1\+Encrypter (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{d,  }\item[{int}]{rho }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classHE1Encrypter_aac874cc80eb19b455bd1ead547cf2b15}\label{classHE1Encrypter_aac874cc80eb19b455bd1ead547cf2b15}} 
+Initialise cipher by generating cipher parameters so that {\ttfamily p} is large enough to accommodate a degree {\ttfamily d} multivariate polynomial computed over {\ttfamily n} {\ttfamily rho\%-\/bit} integer inputs and {\ttfamily q} is large enough so that {\ttfamily pq} cannot be factored in polynomial time. 
+\begin{DoxyParams}{Parameters}
+{\em n} & total number of inputs \\
+\hline
+{\em d} & degree of polynomial to compute \\
+\hline
+{\em rho} & bit length of inputs, e.\+g for 32-\/bit integers {\ttfamily rho} = 32 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHE1Encrypter_ae9419b3ea61b96731501a9979f878131}\label{classHE1Encrypter_ae9419b3ea61b96731501a9979f878131}} 
 \index{H\+E1\+Encrypter@{H\+E1\+Encrypter}!````~H\+E1\+Encrypter@{$\sim$\+H\+E1\+Encrypter}}
 \index{````~H\+E1\+Encrypter@{$\sim$\+H\+E1\+Encrypter}!H\+E1\+Encrypter@{H\+E1\+Encrypter}}
 \subsubsection{\texorpdfstring{$\sim$\+H\+E1\+Encrypter()}{~HE1Encrypter()}}
-{\footnotesize\ttfamily H\+E1\+Encrypter\+::$\sim$\+H\+E1\+Encrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual H\+E1\+Encrypter\+::$\sim$\+H\+E1\+Encrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -70,6 +84,14 @@ virtual \hyperlink{classHE1Encrypter_aac874cc80eb19b455bd1ead547cf2b15}{$\sim$\+
 \subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
 {\footnotesize\ttfamily N\+T\+L\+::\+Z\+Z\+\_\+p H\+E1\+Encrypter\+::encrypt (\begin{DoxyParamCaption}\item[{N\+T\+L\+::\+ZZ \&}]{plaintext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Encrypt a plaintext 
+\begin{DoxyParams}{Parameters}
+{\em plaintext} & A plaintext value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A ciphertext value 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$<$ N\+T\+L\+::\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
@@ -80,12 +102,18 @@ Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$
 \subsubsection{\texorpdfstring{get\+Key()}{getKey()}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ \& H\+E1\+Encrypter\+::get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Accessor to retrieve the secret modulus, {\ttfamily p} \begin{DoxyReturn}{Returns}
+Secret modulus {\ttfamily p} 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classHE1Encrypter_a05627c66faf89c133a24fa7bb4553ef2}\label{classHE1Encrypter_a05627c66faf89c133a24fa7bb4553ef2}} 
 \index{H\+E1\+Encrypter@{H\+E1\+Encrypter}!write\+Secrets\+To\+J\+S\+ON@{write\+Secrets\+To\+J\+S\+ON}}
 \index{write\+Secrets\+To\+J\+S\+ON@{write\+Secrets\+To\+J\+S\+ON}!H\+E1\+Encrypter@{H\+E1\+Encrypter}}
 \subsubsection{\texorpdfstring{write\+Secrets\+To\+J\+S\+O\+N()}{writeSecretsToJSON()}}
 {\footnotesize\ttfamily std\+::string H\+E1\+Encrypter\+::write\+Secrets\+To\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Writes cipher secrets out to a J\+S\+ON string \begin{DoxyReturn}{Returns}
+J\+S\+ON string 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classEncipher_a27d3efa1e364c1f0d7def65454c61b85}{Encipher$<$ N\+T\+L\+::\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.

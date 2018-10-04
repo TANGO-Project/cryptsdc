@@ -16,8 +16,17 @@
 
 class PolyACDEncrypter : public Encipher<NTL::ZZX,NTL::ZZX>{
 private:
+	/**
+	 * Secret large integer parameter
+	 */
 	NTL::ZZ k1;
+	/**
+	 * Secret polynomial
+	 */
 	NTL::ZZX k2;
+	/**
+	 * The bit length of the plaintext coefficients
+	 */
 	int mu;
 
 public:

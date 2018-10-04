@@ -232,6 +232,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Convenience method to encrypt a 16-bit integer to a string representation of the ciphertext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A 16-bit integer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the ciphertext </dd></dl>
 
 </div>
 </div>
@@ -258,6 +265,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Convenience method to encrypt a 32-bit integer to a string representation of the ciphertext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A 32-bit integer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the ciphertext </dd></dl>
 
 </div>
 </div>
@@ -284,6 +298,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Convenience method to encrypt a 64-bit integer to a string representation of the ciphertext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A 64-bit integer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the ciphertext </dd></dl>
 
 </div>
 </div>
@@ -310,6 +331,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Convenience method to encrypt to a string representation of the ciphertext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A multiprecision integer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the ciphertext </dd></dl>
 
 </div>
 </div>
@@ -346,6 +374,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Generate the cipher parameters common to the HE2 and HE2N ciphers. This method generates <code>a</code>, <code>gamma</code>, and <code>R</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lambda</td><td>The bit length of <code>p</code> </td></tr>
+    <tr><td class="paramname">eta</td><td>The bit length of <code>q</code> where the modulus is <code>pq</code> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -371,6 +406,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Write the public cipher parameters to a JSON string </p><dl class="section return"><dt>Returns</dt><dd>JSON string </dd></dl>
 
 <p>Implements <a class="el" href="classHOMEncipher.html#abf176e3fb85de6f0f6a2c96563397d39">HOMEncipher&lt; NTL::vec_ZZ_p, NTL::ZZ &gt;</a>.</p>
 
@@ -396,6 +432,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The secret vector of the cipher. This is a pointer to avoid a being initialised mod zero. </p>
 
 </div>
 </div>
@@ -418,6 +455,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The secret decryption vector. This is a pointer to avoid gamma being initialised mod zero. </p>
 
 </div>
 </div>
@@ -440,6 +478,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>One as a multiprecision integer </p>
 
 </div>
 </div>
@@ -462,6 +501,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The vector [1 1]^T </p>
 
 </div>
 </div>
@@ -484,6 +524,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The secret key as a modulo integer. This is for convenience to avoid having to convert multiple times. This is a pointer to avoid pmod being initialised mod zero. </p>
 
 </div>
 </div>
@@ -506,6 +547,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The public re-encryption matrix. This is a pointer to avoid R being initialised mod zero. </p>
 
 </div>
 </div>

@@ -194,6 +194,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Decrypts a ciphertext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ciphertext</td><td>Ciphertext value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Plaintext value </dd></dl>
 
 <p>Implements <a class="el" href="classDecipher.html#ac6b8c369eda2d7e17fa90cb594cf41b6">Decipher&lt; std::string, std::string &gt;</a>.</p>
 
@@ -214,6 +221,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Convenience method to decrypt a byte array </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ciphertext</td><td>byte array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>plaintext byte string </dd></dl>
 
 </div>
 </div>
@@ -232,6 +246,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Convenience method to decrypt a hexadecimal encoded string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hexString</td><td>Hexadecimal encoded string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>plaintext byte string </dd></dl>
 
 </div>
 </div>
@@ -248,7 +269,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void DETDecrypter::readSecretsFromJSON </td>
           <td>(</td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>reader</em></td><td>)</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -258,6 +279,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Reads the cipher secrets in from a JSON string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>JSON string </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classDecipher.html#a39aea002012130201e12a8fa7d84dda5">Decipher&lt; std::string, std::string &gt;</a>.</p>
 
@@ -288,6 +315,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Accessor to set the AES cipher key and initialisation vector </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>AES key (byte array) </td></tr>
+    <tr><td class="paramname">iv</td><td>AES initiialisation vector (byte array) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -316,6 +350,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Accessor to set the AES cipher key and initialisation vector </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hexkey</td><td>Hexadecimal encoded AES key </td></tr>
+    <tr><td class="paramname">hexiv</td><td>Hexadecimal encoded initialisation vector </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -339,6 +380,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>CBC mode AES decryption. </p>
 
 </div>
 </div>
@@ -361,6 +403,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>AES initialisation vector (byte array) </p>
 
 </div>
 </div>
@@ -383,6 +426,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>AES key (byte array) </p>
 
 </div>
 </div>

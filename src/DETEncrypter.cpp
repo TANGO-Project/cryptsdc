@@ -5,15 +5,13 @@
 #include <jsoncpp/json/json.h>
 #include "DETEncrypter.h"
 
+
 DETEncrypter::DETEncrypter() {
 	CryptoPP::AutoSeededRandomPool rng;
 	key.CleanNew(CryptoPP::AES::MAX_KEYLENGTH);
 	rng.GenerateBlock(key, key.size());
 	iv.CleanNew(CryptoPP::AES::BLOCKSIZE);
 	rng.GenerateBlock(iv, iv.size());
-}
-
-DETEncrypter::~DETEncrypter() {
 }
 
 std::string DETEncrypter::encrypt(std::string& plaintext) {

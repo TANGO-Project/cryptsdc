@@ -91,8 +91,6 @@ Collaboration diagram for SSEEncrypter:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab13571d2a7a8875226bf8901cd080949"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSEEncrypter.html#ab13571d2a7a8875226bf8901cd080949">encrypt</a> (std::string &amp;plaintext) override</td></tr>
 <tr class="separator:ab13571d2a7a8875226bf8901cd080949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54465123beb996dc0410c8f8c4ec2ba6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSEEncrypter.html#a54465123beb996dc0410c8f8c4ec2ba6">encryptToHex</a> (std::string &amp;plaintext)</td></tr>
-<tr class="separator:a54465123beb996dc0410c8f8c4ec2ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9562054f00a5f9899b019568cad2338"><td class="memItemLeft" align="right" valign="top">CryptoPP::SecByteBlock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSEEncrypter.html#ae9562054f00a5f9899b019568cad2338">getKey</a> ()</td></tr>
 <tr class="separator:ae9562054f00a5f9899b019568cad2338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa90c40369bc916f61e870fd39a42c2"><td class="memItemLeft" align="right" valign="top">CryptoPP::SecByteBlock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSEEncrypter.html#a0fa90c40369bc916f61e870fd39a42c2">getKeyGenKey</a> ()</td></tr>
@@ -154,6 +152,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The constructor generates three random values: a 256-bit cipher key; a 256-bit key for the key generation cipher; and an initialisation vector for the key generation cipher. </p>
 
 </div>
 </div>
@@ -172,6 +171,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Initialises the cipher using pre-existing secrets in the supplied JSON string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secrets</td><td>A JSON string containing the hex encoded cipher keys </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -216,6 +221,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Convenience method to generate and hexadecimal encode the search key </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">word</td><td>Input word </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A hexadecimal encoded string </dd></dl>
 
 </div>
 </div>
@@ -234,6 +246,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This function generates a MAC key using a deterministic cipher (AES with a constant initialisation vector). This is applied to the input word </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">word</td><td>Input word </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 16 or 32 byte array </dd></dl>
 
 </div>
 </div>
@@ -270,6 +289,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Decode a hexadecimal string to a byte array </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hexString</td><td>Hexadecimal string </td></tr>
+    <tr><td class="paramname">bytes</td><td>Byte array </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -296,26 +322,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Encrypts the plaintext word as a triple of a 16-byte intialisation vector, an AES ciphertext, and a MAC tag. Currently, this triple is implmented as a hex encoded JSON object for convenience. However, it could easily be altered to return a C++ tuple or a concatenated byte sequence. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A JSON object </dd></dl>
 
 <p>Implements <a class="el" href="classEncipher.html#aaf8138eb280608bfd03c6eb762ffc010">Encipher&lt; std::string, std::string &gt;</a>.</p>
-
-</div>
-</div>
-<a id="a54465123beb996dc0410c8f8c4ec2ba6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54465123beb996dc0410c8f8c4ec2ba6">&#9670;&nbsp;</a></span>encryptToHex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string SSEEncrypter::encryptToHex </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>plaintext</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -333,6 +348,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Convenience method to get the key as a hexadecimal encoded string. </p><dl class="section return"><dt>Returns</dt><dd>hexadecimal encoded string </dd></dl>
 
 </div>
 </div>
@@ -350,6 +366,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Convenience method to get the key as a hexadecimal encoded string. </p><dl class="section return"><dt>Returns</dt><dd>hexadecimal encoded string </dd></dl>
 
 </div>
 </div>
@@ -367,6 +384,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Accessor to return the AES cipher key </p><dl class="section return"><dt>Returns</dt><dd>Key byte sequence </dd></dl>
 
 </div>
 </div>
@@ -384,6 +402,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Accessor to return the key for the deterministic AES instance used for key generation </p><dl class="section return"><dt>Returns</dt><dd>Key byte sequence </dd></dl>
 
 </div>
 </div>
@@ -409,6 +428,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Writes cipher secrets out to a JSON string </p><dl class="section return"><dt>Returns</dt><dd>JSON string </dd></dl>
 
 <p>Implements <a class="el" href="classEncipher.html#a27d3efa1e364c1f0d7def65454c61b85">Encipher&lt; std::string, std::string &gt;</a>.</p>
 
@@ -434,6 +454,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The encryption cipher. AES is CBC mode. </p>
 
 </div>
 </div>
@@ -456,6 +477,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The 256-bit key for the encryption cipher </p>
 
 </div>
 </div>
@@ -478,6 +500,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The key generation cipher. AES is CBC mode. </p>
 
 </div>
 </div>
@@ -500,6 +523,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The initialization vector for the key generation cipher </p>
 
 </div>
 </div>
@@ -522,6 +546,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The 256-bit key for the key generation cipher </p>
 
 </div>
 </div>
@@ -544,6 +569,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The MAC algorithm. </p>
 
 </div>
 </div>

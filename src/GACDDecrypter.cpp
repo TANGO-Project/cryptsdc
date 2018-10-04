@@ -9,12 +9,6 @@
 #include <NTL/ZZ.h>
 #include "GACDDecrypter.h"
 
-GACDDecrypter::GACDDecrypter() {
-}
-
-GACDDecrypter::~GACDDecrypter() {
-}
-
 NTL::ZZ GACDDecrypter::decrypt(NTL::ZZ& ciphertext){
 	return ciphertext/k;
 }

@@ -108,8 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a30ffe8f94a95f723e62d0b1a1ed8dc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11abdce8bc5cda79b1d3f20b940a99d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDETEncrypter.html#a11abdce8bc5cda79b1d3f20b940a99d1">DETEncrypter</a> ()</td></tr>
 <tr class="separator:a11abdce8bc5cda79b1d3f20b940a99d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02972763cd6466853004306f8e47c57d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDETEncrypter.html#a02972763cd6466853004306f8e47c57d">~DETEncrypter</a> ()</td></tr>
-<tr class="separator:a02972763cd6466853004306f8e47c57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517bdbe6dfd178ebb66405faa9cfca55"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDETEncrypter.html#a517bdbe6dfd178ebb66405faa9cfca55">~DETEncrypter</a> ()</td></tr>
+<tr class="separator:a517bdbe6dfd178ebb66405faa9cfca55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEncipher"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEncipher')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEncipher.html">Encipher&lt; std::string, std::string &gt;</a></td></tr>
 <tr class="memitem:a0d082b8ecd382929d4592e094c0028a6 inherit pub_methods_classEncipher"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEncipher.html#a0d082b8ecd382929d4592e094c0028a6">Encipher</a> ()</td></tr>
 <tr class="separator:a0d082b8ecd382929d4592e094c0028a6 inherit pub_methods_classEncipher"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,11 +140,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The constructor generates a random 256-bit key and initialisation vector. </p>
 
 </div>
 </div>
-<a id="a02972763cd6466853004306f8e47c57d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02972763cd6466853004306f8e47c57d">&#9670;&nbsp;</a></span>~DETEncrypter()</h2>
+<a id="a517bdbe6dfd178ebb66405faa9cfca55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517bdbe6dfd178ebb66405faa9cfca55">&#9670;&nbsp;</a></span>~DETEncrypter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +154,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DETEncrypter::~DETEncrypter </td>
+          <td class="memname">virtual DETEncrypter::~DETEncrypter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -161,7 +162,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -192,6 +193,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Encrypt a plaintext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A plaintext value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A ciphertext value </dd></dl>
 
 <p>Implements <a class="el" href="classEncipher.html#aaf8138eb280608bfd03c6eb762ffc010">Encipher&lt; std::string, std::string &gt;</a>.</p>
 
@@ -212,6 +220,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A convenience method to encrypt a byte array </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A byte array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A ciphertext as a byte string </dd></dl>
 
 </div>
 </div>
@@ -230,6 +245,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A convenience method to encrypt to a hexadecimal encoded string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A (byte) string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A hexadecimal encoded string </dd></dl>
 
 </div>
 </div>
@@ -248,6 +270,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A convenience method to encrypt a byte array to a hexadecimal encoded string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A byte array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A hexadecimal encoded string </dd></dl>
 
 </div>
 </div>
@@ -265,6 +294,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Convenience method to get the initialisation vector as a hexadecimal encoded string </p><dl class="section return"><dt>Returns</dt><dd>A hexadecimal encoded string </dd></dl>
 
 </div>
 </div>
@@ -282,6 +312,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Convenience method to get the key as a hexadecimal encoded string </p><dl class="section return"><dt>Returns</dt><dd>A hexadecimal encoded string </dd></dl>
 
 </div>
 </div>
@@ -299,6 +330,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the CBC mode initialisation vector as a byte array </p><dl class="section return"><dt>Returns</dt><dd>Byte array </dd></dl>
 
 </div>
 </div>
@@ -316,6 +348,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the key material as a byte aray </p><dl class="section return"><dt>Returns</dt><dd>Byte array </dd></dl>
 
 </div>
 </div>
@@ -341,6 +374,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Writes cipher secrets out to a JSON string </p><dl class="section return"><dt>Returns</dt><dd>JSON string </dd></dl>
 
 <p>Implements <a class="el" href="classEncipher.html#a27d3efa1e364c1f0d7def65454c61b85">Encipher&lt; std::string, std::string &gt;</a>.</p>
 
@@ -366,6 +400,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>CBC mode AES encryption </p>
 
 </div>
 </div>
@@ -388,6 +423,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>AES CBC (Cipher Block Chaining) mode initialization vector (byte array) </p>
 
 </div>
 </div>
@@ -410,6 +446,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The AES cipher key (byte array) </p>
 
 </div>
 </div>

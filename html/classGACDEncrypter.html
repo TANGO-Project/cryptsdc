@@ -93,8 +93,8 @@ Collaboration diagram for GACDEncrypter:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a923b16f668dca6e17857df7c825ab66f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDEncrypter.html#a923b16f668dca6e17857df7c825ab66f">GACDEncrypter</a> (int bits)</td></tr>
 <tr class="separator:a923b16f668dca6e17857df7c825ab66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cccf9b5e5f8728c1df5c73cea492fca"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDEncrypter.html#a9cccf9b5e5f8728c1df5c73cea492fca">~GACDEncrypter</a> ()</td></tr>
-<tr class="separator:a9cccf9b5e5f8728c1df5c73cea492fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257b4b64e312222137fd351ce34fcf2e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDEncrypter.html#a257b4b64e312222137fd351ce34fcf2e">~GACDEncrypter</a> ()</td></tr>
+<tr class="separator:a257b4b64e312222137fd351ce34fcf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310a857f6b77a6c83d4319968d49902f"><td class="memItemLeft" align="right" valign="top">NTL::ZZ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDEncrypter.html#a310a857f6b77a6c83d4319968d49902f">encrypt</a> (NTL::ZZ &amp;plaintext) override</td></tr>
 <tr class="separator:a310a857f6b77a6c83d4319968d49902f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01cd18ae81d0d28076c4ceb690a8b418"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDEncrypter.html#a01cd18ae81d0d28076c4ceb690a8b418">writeSecretsToJSON</a> () override</td></tr>
@@ -132,11 +132,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The constructor generates a prime with 8/3 as many bits as <code>bits</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bits</td><td>Bit length of inputs </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a9cccf9b5e5f8728c1df5c73cea492fca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cccf9b5e5f8728c1df5c73cea492fca">&#9670;&nbsp;</a></span>~GACDEncrypter()</h2>
+<a id="a257b4b64e312222137fd351ce34fcf2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257b4b64e312222137fd351ce34fcf2e">&#9670;&nbsp;</a></span>~GACDEncrypter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +151,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GACDEncrypter::~GACDEncrypter </td>
+          <td class="memname">virtual GACDEncrypter::~GACDEncrypter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -153,7 +159,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -184,6 +190,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Encrypt a plaintext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A plaintext value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A ciphertext value </dd></dl>
 
 <p>Implements <a class="el" href="classEncipher.html#aaf8138eb280608bfd03c6eb762ffc010">Encipher&lt; NTL::ZZ, NTL::ZZ &gt;</a>.</p>
 
@@ -211,6 +224,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Writes cipher secrets out to a JSON string </p><dl class="section return"><dt>Returns</dt><dd>JSON string </dd></dl>
 
 <p>Implements <a class="el" href="classEncipher.html#a27d3efa1e364c1f0d7def65454c61b85">Encipher&lt; NTL::ZZ, NTL::ZZ &gt;</a>.</p>
 
@@ -236,6 +250,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The secret key, <code>k</code>, a large integer </p>
 
 </div>
 </div>
@@ -258,6 +273,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The maximum value of the random offsets in each ciphertext </p>
 
 </div>
 </div>
@@ -280,6 +296,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The minimum value of the random offsets in each ciphertext </p>
 
 </div>
 </div>
@@ -302,6 +319,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The pseudorandom number generator </p>
 
 </div>
 </div>

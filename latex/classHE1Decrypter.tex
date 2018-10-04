@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for H\+E1\+Decrypter\+:
-\nopagebreak
+Inheritance diagram for H\+E1\+Decrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for H\+E1\+Decrypter\+:
 \end{figure}
 
 
-Collaboration diagram for H\+E1\+Decrypter\+:
-\nopagebreak
+Collaboration diagram for H\+E1\+Decrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -37,7 +35,7 @@ void \hyperlink{classHE1Decrypter_a7b06b69bcd5ef096067232f819321482}{set\+Key} (
 \item 
 \hyperlink{classHE1Decrypter_a68c49940560941d85b53e1b8d8d20df1}{H\+E1\+Decrypter} ()
 \item 
-virtual \hyperlink{classHE1Decrypter_aa1cdd009aae80628b7508c13430adae5}{$\sim$\+H\+E1\+Decrypter} ()
+virtual \hyperlink{classHE1Decrypter_a9beb110e7544804f2c906bae64932aab}{$\sim$\+H\+E1\+Decrypter} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -47,13 +45,13 @@ virtual \hyperlink{classHE1Decrypter_aa1cdd009aae80628b7508c13430adae5}{$\sim$\+
 \index{H\+E1\+Decrypter@{H\+E1\+Decrypter}!H\+E1\+Decrypter@{H\+E1\+Decrypter}}
 \index{H\+E1\+Decrypter@{H\+E1\+Decrypter}!H\+E1\+Decrypter@{H\+E1\+Decrypter}}
 \subsubsection{\texorpdfstring{H\+E1\+Decrypter()}{HE1Decrypter()}}
-{\footnotesize\ttfamily H\+E1\+Decrypter\+::\+H\+E1\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily H\+E1\+Decrypter\+::\+H\+E1\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{classHE1Decrypter_aa1cdd009aae80628b7508c13430adae5}\label{classHE1Decrypter_aa1cdd009aae80628b7508c13430adae5}} 
+\mbox{\Hypertarget{classHE1Decrypter_a9beb110e7544804f2c906bae64932aab}\label{classHE1Decrypter_a9beb110e7544804f2c906bae64932aab}} 
 \index{H\+E1\+Decrypter@{H\+E1\+Decrypter}!````~H\+E1\+Decrypter@{$\sim$\+H\+E1\+Decrypter}}
 \index{````~H\+E1\+Decrypter@{$\sim$\+H\+E1\+Decrypter}!H\+E1\+Decrypter@{H\+E1\+Decrypter}}
 \subsubsection{\texorpdfstring{$\sim$\+H\+E1\+Decrypter()}{~HE1Decrypter()}}
-{\footnotesize\ttfamily H\+E1\+Decrypter\+::$\sim$\+H\+E1\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual H\+E1\+Decrypter\+::$\sim$\+H\+E1\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -64,6 +62,14 @@ virtual \hyperlink{classHE1Decrypter_aa1cdd009aae80628b7508c13430adae5}{$\sim$\+
 \subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ H\+E1\+Decrypter\+::decrypt (\begin{DoxyParamCaption}\item[{N\+T\+L\+::\+Z\+Z\+\_\+p \&}]{ciphertext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Decrypts a ciphertext 
+\begin{DoxyParams}{Parameters}
+{\em ciphertext} & Ciphertext value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plaintext value 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{Decipher$<$ N\+T\+L\+::\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
@@ -74,12 +80,17 @@ Implements \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{Decipher$
 \subsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void H\+E1\+Decrypter\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classHE1Decrypter_af60ccc6d0afe7555a9d1468ad7047733}\label{classHE1Decrypter_af60ccc6d0afe7555a9d1468ad7047733}} 
+Intialise the cipher by setting the local modulus for arithmetic operations to {\ttfamily p} \mbox{\Hypertarget{classHE1Decrypter_af60ccc6d0afe7555a9d1468ad7047733}\label{classHE1Decrypter_af60ccc6d0afe7555a9d1468ad7047733}} 
 \index{H\+E1\+Decrypter@{H\+E1\+Decrypter}!read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}}
 \index{read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}!H\+E1\+Decrypter@{H\+E1\+Decrypter}}
 \subsubsection{\texorpdfstring{read\+Secrets\+From\+J\+S\+O\+N()}{readSecretsFromJSON()}}
-{\footnotesize\ttfamily void H\+E1\+Decrypter\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void H\+E1\+Decrypter\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Reads the cipher secrets in from a J\+S\+ON string 
+\begin{DoxyParams}{Parameters}
+{\em string} & J\+S\+ON string \\
+\hline
+\end{DoxyParams}
 
 
 Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$<$ N\+T\+L\+::\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
@@ -90,6 +101,11 @@ Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$
 \subsubsection{\texorpdfstring{set\+Key()}{setKey()}}
 {\footnotesize\ttfamily void H\+E1\+Decrypter\+::set\+Key (\begin{DoxyParamCaption}\item[{N\+T\+L\+::\+ZZ \&}]{key }\end{DoxyParamCaption})}
 
+Set the secret key to the given value 
+\begin{DoxyParams}{Parameters}
+{\em key} & Multiprecision integer \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

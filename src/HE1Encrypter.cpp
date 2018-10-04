@@ -1,30 +1,25 @@
 #include <iostream>
 #include <sstream>
 #include <NTL/RR.h>
+#include <NTL/ZZ_p.h>
 #include <json/json.h>
 #include "HE1Encrypter.h"
 
 #include "Random.h"
 
-HE1Encrypter::~HE1Encrypter()
-{
-};
-
-//Generate cipher parameters with p lambda bit prime, q eta bit prime
 HE1Encrypter::HE1Encrypter(int lambda, int eta)
 {
 	generateParameters(lambda,eta);
 }
 
-//Generate cipher parameters so that p & q large enough to accommodate degree d multivariate polynomial
-//computed over n rho-bit integer inputs
 HE1Encrypter::HE1Encrypter(int n, int d, int rho)
 {
-	NTL::RR two = NTL::RR(2);
-	NTL::RR exp1 = NTL::RR(rho*d);
-	NTL::RR nplusone = NTL::RR(n+1);
-	NTL::RR exp2 = NTL::RR(d);
-	NTL::RR ploBound = pow(two,exp1)*pow(nplusone,exp2);
+	NTL::RR two(2);
+	NTL::RR exp1(rho*d);
+	NTL::RR nplusone(n+1);
+	NTL::RR exp2(d);
+	NTL::RR ploBound;
+	ploBound = pow(two,exp1)*pow(nplusone,exp2);
 	NTL::ZZ pLowerBound;
 	conv(pLowerBound,ploBound);
 	long lambda = NumBits(pLowerBound) + 1;

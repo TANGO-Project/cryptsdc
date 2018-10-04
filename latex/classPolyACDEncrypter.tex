@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for Poly\+A\+C\+D\+Encrypter\+:
-\nopagebreak
+Inheritance diagram for Poly\+A\+C\+D\+Encrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for Poly\+A\+C\+D\+Encrypter\+:
 \end{figure}
 
 
-Collaboration diagram for Poly\+A\+C\+D\+Encrypter\+:
-\nopagebreak
+Collaboration diagram for Poly\+A\+C\+D\+Encrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -78,6 +76,14 @@ int \hyperlink{classPolyACDEncrypter_a3afaccbe1fbc6379e6061f1489e9a253}{mu}
 \subsubsection{\texorpdfstring{encrypt()}{encrypt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily N\+T\+L\+::\+Z\+ZX Poly\+A\+C\+D\+Encrypter\+::encrypt (\begin{DoxyParamCaption}\item[{N\+T\+L\+::\+Z\+ZX \&}]{plaintext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Encrypt a plaintext 
+\begin{DoxyParams}{Parameters}
+{\em plaintext} & A plaintext value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A ciphertext value 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$<$ N\+T\+L\+::\+Z\+Z\+X, N\+T\+L\+::\+Z\+Z\+X $>$}.
@@ -94,6 +100,9 @@ Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$
 \subsubsection{\texorpdfstring{write\+Secrets\+To\+J\+S\+O\+N()}{writeSecretsToJSON()}}
 {\footnotesize\ttfamily std\+::string Poly\+A\+C\+D\+Encrypter\+::write\+Secrets\+To\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Writes cipher secrets out to a J\+S\+ON string \begin{DoxyReturn}{Returns}
+J\+S\+ON string 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classEncipher_a27d3efa1e364c1f0d7def65454c61b85}{Encipher$<$ N\+T\+L\+::\+Z\+Z\+X, N\+T\+L\+::\+Z\+Z\+X $>$}.
@@ -107,19 +116,19 @@ Implements \hyperlink{classEncipher_a27d3efa1e364c1f0d7def65454c61b85}{Encipher$
 \subsubsection{\texorpdfstring{k1}{k1}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ Poly\+A\+C\+D\+Encrypter\+::k1\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classPolyACDEncrypter_aa4de2f8e1e03808b7a7c7b9576084482}\label{classPolyACDEncrypter_aa4de2f8e1e03808b7a7c7b9576084482}} 
+Secret large integer parameter \mbox{\Hypertarget{classPolyACDEncrypter_aa4de2f8e1e03808b7a7c7b9576084482}\label{classPolyACDEncrypter_aa4de2f8e1e03808b7a7c7b9576084482}} 
 \index{Poly\+A\+C\+D\+Encrypter@{Poly\+A\+C\+D\+Encrypter}!k2@{k2}}
 \index{k2@{k2}!Poly\+A\+C\+D\+Encrypter@{Poly\+A\+C\+D\+Encrypter}}
 \subsubsection{\texorpdfstring{k2}{k2}}
 {\footnotesize\ttfamily N\+T\+L\+::\+Z\+ZX Poly\+A\+C\+D\+Encrypter\+::k2\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classPolyACDEncrypter_a3afaccbe1fbc6379e6061f1489e9a253}\label{classPolyACDEncrypter_a3afaccbe1fbc6379e6061f1489e9a253}} 
+Secret polynomial \mbox{\Hypertarget{classPolyACDEncrypter_a3afaccbe1fbc6379e6061f1489e9a253}\label{classPolyACDEncrypter_a3afaccbe1fbc6379e6061f1489e9a253}} 
 \index{Poly\+A\+C\+D\+Encrypter@{Poly\+A\+C\+D\+Encrypter}!mu@{mu}}
 \index{mu@{mu}!Poly\+A\+C\+D\+Encrypter@{Poly\+A\+C\+D\+Encrypter}}
 \subsubsection{\texorpdfstring{mu}{mu}}
 {\footnotesize\ttfamily int Poly\+A\+C\+D\+Encrypter\+::mu\hspace{0.3cm}{\ttfamily [private]}}
 
-
+The bit length of the plaintext coefficients 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

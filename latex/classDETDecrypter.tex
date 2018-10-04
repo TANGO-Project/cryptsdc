@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for D\+E\+T\+Decrypter\+:
-\nopagebreak
+Inheritance diagram for D\+E\+T\+Decrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for D\+E\+T\+Decrypter\+:
 \end{figure}
 
 
-Collaboration diagram for D\+E\+T\+Decrypter\+:
-\nopagebreak
+Collaboration diagram for D\+E\+T\+Decrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -76,6 +74,14 @@ Crypto\+P\+P\+::\+C\+B\+C\+\_\+\+Mode$<$ Crypto\+P\+P\+::\+A\+ES $>$\+::Decrypti
 \subsubsection{\texorpdfstring{decrypt()}{decrypt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily std\+::string D\+E\+T\+Decrypter\+::decrypt (\begin{DoxyParamCaption}\item[{std\+::string \&}]{ciphertext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Decrypts a ciphertext 
+\begin{DoxyParams}{Parameters}
+{\em ciphertext} & Ciphertext value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plaintext value 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{Decipher$<$ std\+::string, std\+::string $>$}.
@@ -86,18 +92,39 @@ Implements \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{Decipher$
 \subsubsection{\texorpdfstring{decrypt()}{decrypt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::string D\+E\+T\+Decrypter\+::decrypt (\begin{DoxyParamCaption}\item[{Crypto\+P\+P\+::\+Sec\+Byte\+Block \&}]{ciphertext }\end{DoxyParamCaption})}
 
+Convenience method to decrypt a byte array 
+\begin{DoxyParams}{Parameters}
+{\em ciphertext} & byte array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+plaintext byte string 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDETDecrypter_acb1551670a0c4161a362f20c0eed0b3a}\label{classDETDecrypter_acb1551670a0c4161a362f20c0eed0b3a}} 
 \index{D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}!decrypt\+From\+Hex@{decrypt\+From\+Hex}}
 \index{decrypt\+From\+Hex@{decrypt\+From\+Hex}!D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}}
 \subsubsection{\texorpdfstring{decrypt\+From\+Hex()}{decryptFromHex()}}
 {\footnotesize\ttfamily std\+::string D\+E\+T\+Decrypter\+::decrypt\+From\+Hex (\begin{DoxyParamCaption}\item[{std\+::string \&}]{hex\+String }\end{DoxyParamCaption})}
 
+Convenience method to decrypt a hexadecimal encoded string 
+\begin{DoxyParams}{Parameters}
+{\em hex\+String} & Hexadecimal encoded string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+plaintext byte string 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classDETDecrypter_a8e32703400ead9c35a80549b011307d7}\label{classDETDecrypter_a8e32703400ead9c35a80549b011307d7}} 
 \index{D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}!read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}}
 \index{read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}!D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}}
 \subsubsection{\texorpdfstring{read\+Secrets\+From\+J\+S\+O\+N()}{readSecretsFromJSON()}}
-{\footnotesize\ttfamily void D\+E\+T\+Decrypter\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void D\+E\+T\+Decrypter\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Reads the cipher secrets in from a J\+S\+ON string 
+\begin{DoxyParams}{Parameters}
+{\em string} & J\+S\+ON string \\
+\hline
+\end{DoxyParams}
 
 
 Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$<$ std\+::string, std\+::string $>$}.
@@ -108,12 +135,26 @@ Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$
 \subsubsection{\texorpdfstring{set\+Key\+With\+I\+V()}{setKeyWithIV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void D\+E\+T\+Decrypter\+::set\+Key\+With\+IV (\begin{DoxyParamCaption}\item[{Crypto\+P\+P\+::\+Sec\+Byte\+Block \&}]{key,  }\item[{Crypto\+P\+P\+::\+Sec\+Byte\+Block \&}]{iv }\end{DoxyParamCaption})}
 
+Accessor to set the A\+ES cipher key and initialisation vector 
+\begin{DoxyParams}{Parameters}
+{\em key} & A\+ES key (byte array) \\
+\hline
+{\em iv} & A\+ES initiialisation vector (byte array) \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classDETDecrypter_aea297de1f5c514a5156eabc22c556b3b}\label{classDETDecrypter_aea297de1f5c514a5156eabc22c556b3b}} 
 \index{D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}!set\+Key\+With\+IV@{set\+Key\+With\+IV}}
 \index{set\+Key\+With\+IV@{set\+Key\+With\+IV}!D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}}
 \subsubsection{\texorpdfstring{set\+Key\+With\+I\+V()}{setKeyWithIV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void D\+E\+T\+Decrypter\+::set\+Key\+With\+IV (\begin{DoxyParamCaption}\item[{std\+::string \&}]{hexkey,  }\item[{std\+::string \&}]{hexiv }\end{DoxyParamCaption})}
 
+Accessor to set the A\+ES cipher key and initialisation vector 
+\begin{DoxyParams}{Parameters}
+{\em hexkey} & Hexadecimal encoded A\+ES key \\
+\hline
+{\em hexiv} & Hexadecimal encoded initialisation vector \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -123,19 +164,19 @@ Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$
 \subsubsection{\texorpdfstring{d}{d}}
 {\footnotesize\ttfamily Crypto\+P\+P\+::\+C\+B\+C\+\_\+\+Mode$<$Crypto\+P\+P\+::\+A\+ES$>$\+::Decryption D\+E\+T\+Decrypter\+::d\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classDETDecrypter_a601eb88318e103fd40ad1864f951ab54}\label{classDETDecrypter_a601eb88318e103fd40ad1864f951ab54}} 
+C\+BC mode A\+ES decryption. \mbox{\Hypertarget{classDETDecrypter_a601eb88318e103fd40ad1864f951ab54}\label{classDETDecrypter_a601eb88318e103fd40ad1864f951ab54}} 
 \index{D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}!iv@{iv}}
 \index{iv@{iv}!D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}}
 \subsubsection{\texorpdfstring{iv}{iv}}
 {\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block D\+E\+T\+Decrypter\+::iv\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classDETDecrypter_a44a998e051bc9efc04295b9401ec716e}\label{classDETDecrypter_a44a998e051bc9efc04295b9401ec716e}} 
+A\+ES initialisation vector (byte array) \mbox{\Hypertarget{classDETDecrypter_a44a998e051bc9efc04295b9401ec716e}\label{classDETDecrypter_a44a998e051bc9efc04295b9401ec716e}} 
 \index{D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}!key@{key}}
 \index{key@{key}!D\+E\+T\+Decrypter@{D\+E\+T\+Decrypter}}
 \subsubsection{\texorpdfstring{key}{key}}
 {\footnotesize\ttfamily Crypto\+P\+P\+::\+Sec\+Byte\+Block D\+E\+T\+Decrypter\+::key\hspace{0.3cm}{\ttfamily [private]}}
 
-
+A\+ES key (byte array) 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

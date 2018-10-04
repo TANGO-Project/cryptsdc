@@ -8,7 +8,6 @@
 NTL::ZZ HE2Encipher::ONE = NTL::ZZ(1);
 NTL::vec_ZZ_p HE2Encipher::ONE_VECTOR;
 
-
 HE2Encipher::HE2Encipher()
 {
 	pmod=nullptr;

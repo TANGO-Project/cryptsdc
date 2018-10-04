@@ -12,6 +12,7 @@
 #include <jsoncpp/json/json.h>
 #include "SSEEncrypter.h"
 
+
 SSEEncrypter::SSEEncrypter() {
 	CryptoPP::AutoSeededRandomPool rng;
 	key.CleanNew(CryptoPP::AES::MAX_KEYLENGTH);
@@ -129,6 +130,7 @@ CryptoPP::SecByteBlock SSEEncrypter::getKeyGenKey(){
 	return keyGenKey;
 }
 
+
 std::string SSEEncrypter::getHexEncodedKey(){
 	std::string hexEncodedKey;
 	CryptoPP::ArraySource as(key, key.size(), true,
@@ -138,6 +140,7 @@ std::string SSEEncrypter::getHexEncodedKey(){
 	); // StringSource
 	return hexEncodedKey;
 }
+
 
 std::string SSEEncrypter::getHexEncodedKeyGenKey(){
 	std::string hexEncodedKey;

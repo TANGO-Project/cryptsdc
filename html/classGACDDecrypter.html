@@ -90,8 +90,8 @@ Collaboration diagram for GACDDecrypter:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ce2ad60f6e2a6bb5e474df80e65a61d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDDecrypter.html#a3ce2ad60f6e2a6bb5e474df80e65a61d">GACDDecrypter</a> ()</td></tr>
 <tr class="separator:a3ce2ad60f6e2a6bb5e474df80e65a61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b26823dd1b16c5023639ec62475316a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDDecrypter.html#a4b26823dd1b16c5023639ec62475316a">~GACDDecrypter</a> ()</td></tr>
-<tr class="separator:a4b26823dd1b16c5023639ec62475316a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f940e67f5747fe8052de483531ebfbf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDDecrypter.html#a9f940e67f5747fe8052de483531ebfbf">~GACDDecrypter</a> ()</td></tr>
+<tr class="separator:a9f940e67f5747fe8052de483531ebfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92f6afd3d0a43dd5538cf6a83398ee33"><td class="memItemLeft" align="right" valign="top">NTL::ZZ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDDecrypter.html#a92f6afd3d0a43dd5538cf6a83398ee33">decrypt</a> (NTL::ZZ &amp;ciphertext) override</td></tr>
 <tr class="separator:a92f6afd3d0a43dd5538cf6a83398ee33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7634cc069e61c1a3cf2443fed7c2b15f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGACDDecrypter.html#a7634cc069e61c1a3cf2443fed7c2b15f">readSecretsFromJSON</a> (std::string &amp;secrets) override</td></tr>
@@ -113,6 +113,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">GACDDecrypter::GACDDecrypter </td>
@@ -121,12 +124,17 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4b26823dd1b16c5023639ec62475316a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b26823dd1b16c5023639ec62475316a">&#9670;&nbsp;</a></span>~GACDDecrypter()</h2>
+<a id="a9f940e67f5747fe8052de483531ebfbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f940e67f5747fe8052de483531ebfbf">&#9670;&nbsp;</a></span>~GACDDecrypter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,7 +143,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GACDDecrypter::~GACDDecrypter </td>
+          <td class="memname">virtual GACDDecrypter::~GACDDecrypter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -143,7 +151,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -174,6 +182,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Decrypts a ciphertext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ciphertext</td><td>Ciphertext value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Plaintext value </dd></dl>
 
 <p>Implements <a class="el" href="classDecipher.html#ac6b8c369eda2d7e17fa90cb594cf41b6">Decipher&lt; NTL::ZZ, NTL::ZZ &gt;</a>.</p>
 
@@ -192,7 +207,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void GACDDecrypter::readSecretsFromJSON </td>
           <td>(</td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>secrets</em></td><td>)</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -202,6 +217,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Reads the cipher secrets in from a JSON string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>JSON string </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classDecipher.html#a39aea002012130201e12a8fa7d84dda5">Decipher&lt; NTL::ZZ, NTL::ZZ &gt;</a>.</p>
 
@@ -227,6 +248,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Secret key, <code>k</code>, a large integer </p>
 
 </div>
 </div>

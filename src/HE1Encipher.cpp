@@ -23,7 +23,6 @@ void HE1Encipher::generateParameters(long lambda, long eta){
 	pmod = new NTL::ZZ_p(tmp);
 }
 
-
 std::string HE1Encipher::writeParametersToJSON()
 {
 	Json::Value root;

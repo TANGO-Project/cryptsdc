@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for H\+E2\+N\+Decrypter\+:
-\nopagebreak
+Inheritance diagram for H\+E2\+N\+Decrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for H\+E2\+N\+Decrypter\+:
 \end{figure}
 
 
-Collaboration diagram for H\+E2\+N\+Decrypter\+:
-\nopagebreak
+Collaboration diagram for H\+E2\+N\+Decrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -33,7 +31,7 @@ N\+T\+L\+::\+ZZ \hyperlink{classHE2NDecrypter_aa92e4ddf62a0f2c4199722983e28b0c9}
 \item 
 \hyperlink{classHE2NDecrypter_a079e13cfaf35e9f4b32d4301960c6816}{H\+E2\+N\+Decrypter} ()
 \item 
-virtual \hyperlink{classHE2NDecrypter_a5e6c617b905b370d5186e7d4193fd5b8}{$\sim$\+H\+E2\+N\+Decrypter} ()
+virtual \hyperlink{classHE2NDecrypter_a2046b9ecd1f5de52fe99477859b23947}{$\sim$\+H\+E2\+N\+Decrypter} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -50,11 +48,11 @@ N\+T\+L\+::\+ZZ \hyperlink{classHE2NDecrypter_ad3233fd048ef07f31e4f40ea941cce91}
 \subsubsection{\texorpdfstring{H\+E2\+N\+Decrypter()}{HE2NDecrypter()}}
 {\footnotesize\ttfamily H\+E2\+N\+Decrypter\+::\+H\+E2\+N\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classHE2NDecrypter_a5e6c617b905b370d5186e7d4193fd5b8}\label{classHE2NDecrypter_a5e6c617b905b370d5186e7d4193fd5b8}} 
+\mbox{\Hypertarget{classHE2NDecrypter_a2046b9ecd1f5de52fe99477859b23947}\label{classHE2NDecrypter_a2046b9ecd1f5de52fe99477859b23947}} 
 \index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}!````~H\+E2\+N\+Decrypter@{$\sim$\+H\+E2\+N\+Decrypter}}
 \index{````~H\+E2\+N\+Decrypter@{$\sim$\+H\+E2\+N\+Decrypter}!H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
 \subsubsection{\texorpdfstring{$\sim$\+H\+E2\+N\+Decrypter()}{~HE2NDecrypter()}}
-{\footnotesize\ttfamily H\+E2\+N\+Decrypter\+::$\sim$\+H\+E2\+N\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual H\+E2\+N\+Decrypter\+::$\sim$\+H\+E2\+N\+Decrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -65,6 +63,14 @@ N\+T\+L\+::\+ZZ \hyperlink{classHE2NDecrypter_ad3233fd048ef07f31e4f40ea941cce91}
 \subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ H\+E2\+N\+Decrypter\+::decrypt (\begin{DoxyParamCaption}\item[{N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p \&}]{ciphertext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Decrypts a ciphertext 
+\begin{DoxyParams}{Parameters}
+{\em ciphertext} & Ciphertext value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Plaintext value 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{Decipher$<$ N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
@@ -73,8 +79,13 @@ Implements \hyperlink{classDecipher_ac6b8c369eda2d7e17fa90cb594cf41b6}{Decipher$
 \index{H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}!read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}}
 \index{read\+Secrets\+From\+J\+S\+ON@{read\+Secrets\+From\+J\+S\+ON}!H\+E2\+N\+Decrypter@{H\+E2\+N\+Decrypter}}
 \subsubsection{\texorpdfstring{read\+Secrets\+From\+J\+S\+O\+N()}{readSecretsFromJSON()}}
-{\footnotesize\ttfamily void H\+E2\+N\+Decrypter\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void H\+E2\+N\+Decrypter\+::read\+Secrets\+From\+J\+S\+ON (\begin{DoxyParamCaption}\item[{std\+::string \&}]{string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Reads the cipher secrets in from a J\+S\+ON string 
+\begin{DoxyParams}{Parameters}
+{\em string} & J\+S\+ON string \\
+\hline
+\end{DoxyParams}
 
 
 Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$<$ N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
@@ -88,7 +99,7 @@ Implements \hyperlink{classDecipher_a39aea002012130201e12a8fa7d84dda5}{Decipher$
 \subsubsection{\texorpdfstring{kappa}{kappa}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ H\+E2\+N\+Decrypter\+::kappa\hspace{0.3cm}{\ttfamily [private]}}
 
-
+Secret cipher parameter 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

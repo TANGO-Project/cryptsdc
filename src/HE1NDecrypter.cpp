@@ -2,15 +2,6 @@
 #include <json/json.h>
 #include <NTL/ZZ_p.h>
 
-
-HE1NDecrypter::HE1NDecrypter()
-{
-};
-
-HE1NDecrypter::~HE1NDecrypter()
-{
-};
-
 void HE1NDecrypter::setKey(NTL::vec_ZZ& key)
 {
     p = key[0];

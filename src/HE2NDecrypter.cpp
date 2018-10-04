@@ -7,10 +7,6 @@ HE2NDecrypter::HE2NDecrypter()
     kappa = 0;
 };
 
-HE2NDecrypter::~HE2NDecrypter()
-{
-};
-
 void HE2NDecrypter::readSecretsFromJSON(std::string& json)
 {
 	Json::Value root;   // will contains the root value after parsing.

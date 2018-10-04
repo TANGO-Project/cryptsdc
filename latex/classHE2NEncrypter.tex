@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for H\+E2\+N\+Encrypter\+:
-\nopagebreak
+Inheritance diagram for H\+E2\+N\+Encrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for H\+E2\+N\+Encrypter\+:
 \end{figure}
 
 
-Collaboration diagram for H\+E2\+N\+Encrypter\+:
-\nopagebreak
+Collaboration diagram for H\+E2\+N\+Encrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -54,12 +52,32 @@ N\+T\+L\+::\+Z\+Z\+\_\+p $\ast$ \hyperlink{classHE2NEncrypter_ae13c7d0f1d11f2177
 \subsubsection{\texorpdfstring{H\+E2\+N\+Encrypter()}{HE2NEncrypter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily H\+E2\+N\+Encrypter\+::\+H\+E2\+N\+Encrypter (\begin{DoxyParamCaption}\item[{int}]{lambda,  }\item[{int}]{eta,  }\item[{int}]{nu }\end{DoxyParamCaption})}
 
+Initialise cipher by generating cipher parameters such that {\ttfamily p} is a {\ttfamily lambda} bit prime, {\ttfamily q} is an {\ttfamily eta} bit prime, and {\ttfamily kappa} is a {\ttfamily nu} bit prime. The public modulus for arithmetic operations on ciphertexts is {\ttfamily pq} 
+\begin{DoxyParams}{Parameters}
+{\em lambda} & Bit length of secret modulus {\ttfamily p} (security parameter) \\
+\hline
+{\em eta} & Bit length of secret prime {\ttfamily q} \\
+\hline
+{\em nu} & Bit length of secret prime {\ttfamily kappa}. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classHE2NEncrypter_a3cb8269ce3f3de2f9a12d350366b36f9}\label{classHE2NEncrypter_a3cb8269ce3f3de2f9a12d350366b36f9}} 
 \index{H\+E2\+N\+Encrypter@{H\+E2\+N\+Encrypter}!H\+E2\+N\+Encrypter@{H\+E2\+N\+Encrypter}}
 \index{H\+E2\+N\+Encrypter@{H\+E2\+N\+Encrypter}!H\+E2\+N\+Encrypter@{H\+E2\+N\+Encrypter}}
 \subsubsection{\texorpdfstring{H\+E2\+N\+Encrypter()}{HE2NEncrypter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily H\+E2\+N\+Encrypter\+::\+H\+E2\+N\+Encrypter (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{d,  }\item[{int}]{rho,  }\item[{int}]{rhoprime }\end{DoxyParamCaption})}
 
+Initialise cipher by generating cipher parameters so that {\ttfamily p} and {\ttfamily kappa} are large enough to accommodate a degree {\ttfamily d} multivariate polynomial computed over {\ttfamily n} {\ttfamily rhoprime\%-\/bit} integers and {\ttfamily q} is large enough so that {\ttfamily pq} cannot be factored in polynomial time. 
+\begin{DoxyParams}{Parameters}
+{\em n} & total number of inputs \\
+\hline
+{\em d} & degree of polynomial to compute \\
+\hline
+{\em rho} & bit length of inputs, e.\+g for 32-\/bit integers {\ttfamily rho} = 32 \\
+\hline
+{\em rhoprime} & The effective entropy (bit lengths) of the inputs after encryption. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classHE2NEncrypter_aa5ed36da105b7f9e4fa5fba012e37b0a}\label{classHE2NEncrypter_aa5ed36da105b7f9e4fa5fba012e37b0a}} 
 \index{H\+E2\+N\+Encrypter@{H\+E2\+N\+Encrypter}!````~H\+E2\+N\+Encrypter@{$\sim$\+H\+E2\+N\+Encrypter}}
 \index{````~H\+E2\+N\+Encrypter@{$\sim$\+H\+E2\+N\+Encrypter}!H\+E2\+N\+Encrypter@{H\+E2\+N\+Encrypter}}
@@ -75,6 +93,14 @@ N\+T\+L\+::\+Z\+Z\+\_\+p $\ast$ \hyperlink{classHE2NEncrypter_ae13c7d0f1d11f2177
 \subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
 {\footnotesize\ttfamily N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p H\+E2\+N\+Encrypter\+::encrypt (\begin{DoxyParamCaption}\item[{N\+T\+L\+::\+ZZ \&}]{plaintext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Encrypt a plaintext 
+\begin{DoxyParams}{Parameters}
+{\em plaintext} & A plaintext value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A ciphertext value 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$<$ N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
@@ -85,6 +111,9 @@ Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$
 \subsubsection{\texorpdfstring{write\+Secrets\+To\+J\+S\+O\+N()}{writeSecretsToJSON()}}
 {\footnotesize\ttfamily std\+::string H\+E2\+N\+Encrypter\+::write\+Secrets\+To\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Writes cipher secrets out to a J\+S\+ON string \begin{DoxyReturn}{Returns}
+J\+S\+ON string 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classEncipher_a27d3efa1e364c1f0d7def65454c61b85}{Encipher$<$ N\+T\+L\+::vec\+\_\+\+Z\+Z\+\_\+p, N\+T\+L\+::\+Z\+Z $>$}.
@@ -98,13 +127,13 @@ Implements \hyperlink{classEncipher_a27d3efa1e364c1f0d7def65454c61b85}{Encipher$
 \subsubsection{\texorpdfstring{kappa}{kappa}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ H\+E2\+N\+Encrypter\+::kappa\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classHE2NEncrypter_ae13c7d0f1d11f2177f7183c50d0614a7}\label{classHE2NEncrypter_ae13c7d0f1d11f2177f7183c50d0614a7}} 
+Secret cipher parameter \mbox{\Hypertarget{classHE2NEncrypter_ae13c7d0f1d11f2177f7183c50d0614a7}\label{classHE2NEncrypter_ae13c7d0f1d11f2177f7183c50d0614a7}} 
 \index{H\+E2\+N\+Encrypter@{H\+E2\+N\+Encrypter}!kappamod@{kappamod}}
 \index{kappamod@{kappamod}!H\+E2\+N\+Encrypter@{H\+E2\+N\+Encrypter}}
 \subsubsection{\texorpdfstring{kappamod}{kappamod}}
 {\footnotesize\ttfamily N\+T\+L\+::\+Z\+Z\+\_\+p$\ast$ H\+E2\+N\+Encrypter\+::kappamod\hspace{0.3cm}{\ttfamily [private]}}
 
-
+Kappa as a modulo integer. This is a pointer to avoid kappamod being initialised mod zero. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

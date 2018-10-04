@@ -6,8 +6,7 @@
 
 
 
-Inheritance diagram for G\+A\+C\+D\+Encrypter\+:
-\nopagebreak
+Inheritance diagram for G\+A\+C\+D\+Encrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,8 +15,7 @@ Inheritance diagram for G\+A\+C\+D\+Encrypter\+:
 \end{figure}
 
 
-Collaboration diagram for G\+A\+C\+D\+Encrypter\+:
-\nopagebreak
+Collaboration diagram for G\+A\+C\+D\+Encrypter\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -29,7 +27,7 @@ Collaboration diagram for G\+A\+C\+D\+Encrypter\+:
 \item 
 \hyperlink{classGACDEncrypter_a923b16f668dca6e17857df7c825ab66f}{G\+A\+C\+D\+Encrypter} (int bits)
 \item 
-virtual \hyperlink{classGACDEncrypter_a9cccf9b5e5f8728c1df5c73cea492fca}{$\sim$\+G\+A\+C\+D\+Encrypter} ()
+virtual \hyperlink{classGACDEncrypter_a257b4b64e312222137fd351ce34fcf2e}{$\sim$\+G\+A\+C\+D\+Encrypter} ()
 \item 
 N\+T\+L\+::\+ZZ \hyperlink{classGACDEncrypter_a310a857f6b77a6c83d4319968d49902f}{encrypt} (N\+T\+L\+::\+ZZ \&plaintext) override
 \item 
@@ -55,11 +53,16 @@ N\+T\+L\+::\+ZZ \hyperlink{classGACDEncrypter_a646b9daae82d6666d6a8affd3de41fd5}
 \subsubsection{\texorpdfstring{G\+A\+C\+D\+Encrypter()}{GACDEncrypter()}}
 {\footnotesize\ttfamily G\+A\+C\+D\+Encrypter\+::\+G\+A\+C\+D\+Encrypter (\begin{DoxyParamCaption}\item[{int}]{bits }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classGACDEncrypter_a9cccf9b5e5f8728c1df5c73cea492fca}\label{classGACDEncrypter_a9cccf9b5e5f8728c1df5c73cea492fca}} 
+The constructor generates a prime with 8/3 as many bits as {\ttfamily bits} 
+\begin{DoxyParams}{Parameters}
+{\em bits} & Bit length of inputs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGACDEncrypter_a257b4b64e312222137fd351ce34fcf2e}\label{classGACDEncrypter_a257b4b64e312222137fd351ce34fcf2e}} 
 \index{G\+A\+C\+D\+Encrypter@{G\+A\+C\+D\+Encrypter}!````~G\+A\+C\+D\+Encrypter@{$\sim$\+G\+A\+C\+D\+Encrypter}}
 \index{````~G\+A\+C\+D\+Encrypter@{$\sim$\+G\+A\+C\+D\+Encrypter}!G\+A\+C\+D\+Encrypter@{G\+A\+C\+D\+Encrypter}}
 \subsubsection{\texorpdfstring{$\sim$\+G\+A\+C\+D\+Encrypter()}{~GACDEncrypter()}}
-{\footnotesize\ttfamily G\+A\+C\+D\+Encrypter\+::$\sim$\+G\+A\+C\+D\+Encrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual G\+A\+C\+D\+Encrypter\+::$\sim$\+G\+A\+C\+D\+Encrypter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -70,6 +73,14 @@ N\+T\+L\+::\+ZZ \hyperlink{classGACDEncrypter_a646b9daae82d6666d6a8affd3de41fd5}
 \subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ G\+A\+C\+D\+Encrypter\+::encrypt (\begin{DoxyParamCaption}\item[{N\+T\+L\+::\+ZZ \&}]{plaintext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Encrypt a plaintext 
+\begin{DoxyParams}{Parameters}
+{\em plaintext} & A plaintext value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A ciphertext value 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$<$ N\+T\+L\+::\+Z\+Z, N\+T\+L\+::\+Z\+Z $>$}.
@@ -80,6 +91,9 @@ Implements \hyperlink{classEncipher_aaf8138eb280608bfd03c6eb762ffc010}{Encipher$
 \subsubsection{\texorpdfstring{write\+Secrets\+To\+J\+S\+O\+N()}{writeSecretsToJSON()}}
 {\footnotesize\ttfamily std\+::string G\+A\+C\+D\+Encrypter\+::write\+Secrets\+To\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Writes cipher secrets out to a J\+S\+ON string \begin{DoxyReturn}{Returns}
+J\+S\+ON string 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classEncipher_a27d3efa1e364c1f0d7def65454c61b85}{Encipher$<$ N\+T\+L\+::\+Z\+Z, N\+T\+L\+::\+Z\+Z $>$}.
@@ -93,25 +107,25 @@ Implements \hyperlink{classEncipher_a27d3efa1e364c1f0d7def65454c61b85}{Encipher$
 \subsubsection{\texorpdfstring{k}{k}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ G\+A\+C\+D\+Encrypter\+::k\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classGACDEncrypter_a646b9daae82d6666d6a8affd3de41fd5}\label{classGACDEncrypter_a646b9daae82d6666d6a8affd3de41fd5}} 
+The secret key, {\ttfamily k}, a large integer \mbox{\Hypertarget{classGACDEncrypter_a646b9daae82d6666d6a8affd3de41fd5}\label{classGACDEncrypter_a646b9daae82d6666d6a8affd3de41fd5}} 
 \index{G\+A\+C\+D\+Encrypter@{G\+A\+C\+D\+Encrypter}!maxr@{maxr}}
 \index{maxr@{maxr}!G\+A\+C\+D\+Encrypter@{G\+A\+C\+D\+Encrypter}}
 \subsubsection{\texorpdfstring{maxr}{maxr}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ G\+A\+C\+D\+Encrypter\+::maxr\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classGACDEncrypter_a6b0e9a07d27ec0976cc7958df6f666a4}\label{classGACDEncrypter_a6b0e9a07d27ec0976cc7958df6f666a4}} 
+The maximum value of the random offsets in each ciphertext \mbox{\Hypertarget{classGACDEncrypter_a6b0e9a07d27ec0976cc7958df6f666a4}\label{classGACDEncrypter_a6b0e9a07d27ec0976cc7958df6f666a4}} 
 \index{G\+A\+C\+D\+Encrypter@{G\+A\+C\+D\+Encrypter}!minr@{minr}}
 \index{minr@{minr}!G\+A\+C\+D\+Encrypter@{G\+A\+C\+D\+Encrypter}}
 \subsubsection{\texorpdfstring{minr}{minr}}
 {\footnotesize\ttfamily N\+T\+L\+::\+ZZ G\+A\+C\+D\+Encrypter\+::minr\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classGACDEncrypter_a3f8959f045b15262ae7d680b35d0815c}\label{classGACDEncrypter_a3f8959f045b15262ae7d680b35d0815c}} 
+The minimum value of the random offsets in each ciphertext \mbox{\Hypertarget{classGACDEncrypter_a3f8959f045b15262ae7d680b35d0815c}\label{classGACDEncrypter_a3f8959f045b15262ae7d680b35d0815c}} 
 \index{G\+A\+C\+D\+Encrypter@{G\+A\+C\+D\+Encrypter}!rng@{rng}}
 \index{rng@{rng}!G\+A\+C\+D\+Encrypter@{G\+A\+C\+D\+Encrypter}}
 \subsubsection{\texorpdfstring{rng}{rng}}
 {\footnotesize\ttfamily \hyperlink{classRandom}{Random} G\+A\+C\+D\+Encrypter\+::rng\hspace{0.3cm}{\ttfamily [private]}}
 
-
+The pseudorandom number generator 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

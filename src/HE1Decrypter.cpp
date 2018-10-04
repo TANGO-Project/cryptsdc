@@ -1,14 +1,6 @@
 #include "HE1Decrypter.h"
 #include <json/json.h>
 
-HE1Decrypter::HE1Decrypter()
-{
-};
-
-HE1Decrypter::~HE1Decrypter()
-{
-};
-
 void HE1Decrypter::readSecretsFromJSON(std::string& json)
 {
 	Json::Value root;

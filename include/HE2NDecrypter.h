@@ -9,13 +9,16 @@
 class HE2NDecrypter : public HE2Decipher
 {
 private:
+	/**
+	 * Secret cipher parameter
+	 */
     NTL::ZZ kappa;
 public:
     void readSecretsFromJSON(std::string& json) override;
     NTL::ZZ decrypt(NTL::vec_ZZ_p& ciphertext) override;
 
     HE2NDecrypter();
-    virtual ~HE2NDecrypter();
+    virtual ~HE2NDecrypter(){};
 };
 
 #endif

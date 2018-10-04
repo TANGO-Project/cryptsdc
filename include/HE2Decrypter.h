@@ -12,8 +12,8 @@ public:
     void readSecretsFromJSON(std::string& json) override;
     NTL::ZZ decrypt(NTL::vec_ZZ_p& ciphertext) override;
 
-    virtual ~HE2Decrypter();
-    HE2Decrypter();
+    virtual ~HE2Decrypter(){};
+    HE2Decrypter(){};
 };
 
 #endif

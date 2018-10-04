@@ -2,14 +2,6 @@
 #include <jsoncpp/json/json.h>
 #include "HE2Decrypter.h"
 
-HE2Decrypter::~HE2Decrypter()
-{
-}
-
-HE2Decrypter::HE2Decrypter()
-{
-}
-
 void HE2Decrypter::readSecretsFromJSON(std::string& json)
 {
 	Json::Value root;   // will contain the root value after parsing.

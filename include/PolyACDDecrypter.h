@@ -15,7 +15,13 @@
 
 class PolyACDDecrypter : public Decipher<NTL::ZZX,NTL::ZZX> {
 private:
+	/**
+	 * Secret large integer parameter
+	 */
 	NTL::ZZ k1;
+	/**
+	 * Secret polynomial
+	 */
 	NTL::ZZX k2;
 
 public:

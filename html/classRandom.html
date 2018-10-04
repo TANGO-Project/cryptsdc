@@ -97,7 +97,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac7e446b9b431641c729a6d78ab747781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQTIsaac.html">QTIsaac</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRandom.html#ac7e446b9b431641c729a6d78ab747781">rng</a></td></tr>
 <tr class="separator:ac7e446b9b431641c729a6d78ab747781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements support for uniformly distributed random arbitrary precision integers. We use the ISAAC cipher as our PRNG function.</p>
+<p>ISAAC has been designed to be cryptographically secure if seeded properly. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acb76b49c3903a3c4fb67fd216341f08d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb76b49c3903a3c4fb67fd216341f08d">&#9670;&nbsp;</a></span>Random() <span class="overload">[1/2]</span></h2>
 
@@ -112,6 +115,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Default constructor. Uses device random data to seed the ISAAC cipher. </p>
 
 </div>
 </div>
@@ -130,6 +134,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Uses the supplied byte array to seed the ISAAC cipher </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seed</td><td>A byte array </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -174,6 +184,20 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Generate a multiprecision integer in the range 0 to <code>range-1</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">range</td><td>The maximum value of a random integer produced is <code>range-1</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A multiprecision integer in the range 0 to <code>range-1</code> </dd></dl>
+<p>Generate a multiprecion integer in the range 0 to <code>range-1</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">range</td><td>The maximum value of a random integer produced is <code>range-1</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A multiprecion integer in the range 0 to <code>range-1</code> </dd></dl>
 
 </div>
 </div>
@@ -202,6 +226,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Generate a multiprecision integer in the range <code>min</code> to <code>max-1</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The minimum value of a random integer produced </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum value of a random integer produced is <code>max-1</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A multiprecision integer in the range <code>min</code> to <code>max-1</code> </dd></dl>
 
 </div>
 </div>
@@ -225,6 +257,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The ISAAC cipher is used to generate PRNs. </p>
 
 </div>
 </div>

@@ -4,10 +4,6 @@
 #include "HE2Encrypter.h"
 #include "Random.h"
 
-HE2Encrypter::~HE2Encrypter()
-{
-}
-
 HE2Encrypter::HE2Encrypter(int lambda, int eta){
 	generateParameters(lambda,eta);
 }

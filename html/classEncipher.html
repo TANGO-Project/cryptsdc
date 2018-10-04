@@ -88,7 +88,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf8138eb280608bfd03c6eb762ffc010"><td class="memItemLeft" align="right" valign="top">virtual C&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEncipher.html#aaf8138eb280608bfd03c6eb762ffc010">encrypt</a> (P &amp;plaintext)=0</td></tr>
 <tr class="separator:aaf8138eb280608bfd03c6eb762ffc010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename C, typename P&gt;<br />
+class Encipher&lt; C, P &gt;</h3>
+
+<p>Interface implemented by all enciphering classes in this library </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">C</td><td>Ciphertext type </td></tr>
+    <tr><td class="paramname">P</td><td>Plaintext type </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0d082b8ecd382929d4592e094c0028a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d082b8ecd382929d4592e094c0028a6">&#9670;&nbsp;</a></span>Encipher()</h2>
 
@@ -169,8 +180,15 @@ template&lt;typename C, typename P&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Encrypt a plaintext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A plaintext value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A ciphertext value </dd></dl>
 
-<p>Implemented in <a class="el" href="classSSEEncrypter.html#ab13571d2a7a8875226bf8901cd080949">SSEEncrypter</a>, <a class="el" href="classPolyACDEncrypter.html#a5233a73398d39d93567392c64a120e1e">PolyACDEncrypter</a>, <a class="el" href="classGACDEncrypter.html#a310a857f6b77a6c83d4319968d49902f">GACDEncrypter</a>, <a class="el" href="classDETEncrypter.html#a9d628bff7fe333ece3c39f3827727582">DETEncrypter</a>, <a class="el" href="classHE1NEncrypter.html#a9a9c76558466ac56093cb6da937c7fe3">HE1NEncrypter</a>, <a class="el" href="classHE2NEncrypter.html#aa7ae559f2407b7a5527bd42470224e1b">HE2NEncrypter</a>, <a class="el" href="classHE2Encrypter.html#a57e4bdacbab9b11467f26deab921d134">HE2Encrypter</a>, and <a class="el" href="classHE1Encrypter.html#afc178d8e27a1263bef824bfc8960dbc0">HE1Encrypter</a>.</p>
+<p>Implemented in <a class="el" href="classSSEEncrypter.html#ab13571d2a7a8875226bf8901cd080949">SSEEncrypter</a>, <a class="el" href="classGACDEncrypter.html#a310a857f6b77a6c83d4319968d49902f">GACDEncrypter</a>, <a class="el" href="classPolyACDEncrypter.html#a5233a73398d39d93567392c64a120e1e">PolyACDEncrypter</a>, <a class="el" href="classDETEncrypter.html#a9d628bff7fe333ece3c39f3827727582">DETEncrypter</a>, <a class="el" href="classHE1NEncrypter.html#a9a9c76558466ac56093cb6da937c7fe3">HE1NEncrypter</a>, <a class="el" href="classHE2NEncrypter.html#aa7ae559f2407b7a5527bd42470224e1b">HE2NEncrypter</a>, <a class="el" href="classHE2Encrypter.html#a57e4bdacbab9b11467f26deab921d134">HE2Encrypter</a>, and <a class="el" href="classHE1Encrypter.html#afc178d8e27a1263bef824bfc8960dbc0">HE1Encrypter</a>.</p>
 
 </div>
 </div>
@@ -198,8 +216,9 @@ template&lt;typename C, typename P&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Writes cipher secrets out to a JSON string </p><dl class="section return"><dt>Returns</dt><dd>JSON string </dd></dl>
 
-<p>Implemented in <a class="el" href="classSSEEncrypter.html#a70e01b58fe0de0931cdb00ee97ee4af9">SSEEncrypter</a>, <a class="el" href="classDETEncrypter.html#a30ffe8f94a95f723e62d0b1a1ed8dc56">DETEncrypter</a>, <a class="el" href="classPolyACDEncrypter.html#af478f2fe3f886d23749955eaa72e413b">PolyACDEncrypter</a>, <a class="el" href="classGACDEncrypter.html#a01cd18ae81d0d28076c4ceb690a8b418">GACDEncrypter</a>, <a class="el" href="classHE1NEncrypter.html#ad1bca3e0933b8e15b91d208e421f83b2">HE1NEncrypter</a>, <a class="el" href="classHE2NEncrypter.html#a720d4ee52dadd55f61631554d2942a6b">HE2NEncrypter</a>, <a class="el" href="classHE1Encrypter.html#a05627c66faf89c133a24fa7bb4553ef2">HE1Encrypter</a>, and <a class="el" href="classHE2Encrypter.html#a8cdf863bfbe046b4e57322adf5addddb">HE2Encrypter</a>.</p>
+<p>Implemented in <a class="el" href="classSSEEncrypter.html#a70e01b58fe0de0931cdb00ee97ee4af9">SSEEncrypter</a>, <a class="el" href="classDETEncrypter.html#a30ffe8f94a95f723e62d0b1a1ed8dc56">DETEncrypter</a>, <a class="el" href="classGACDEncrypter.html#a01cd18ae81d0d28076c4ceb690a8b418">GACDEncrypter</a>, <a class="el" href="classPolyACDEncrypter.html#af478f2fe3f886d23749955eaa72e413b">PolyACDEncrypter</a>, <a class="el" href="classHE1NEncrypter.html#ad1bca3e0933b8e15b91d208e421f83b2">HE1NEncrypter</a>, <a class="el" href="classHE2NEncrypter.html#a720d4ee52dadd55f61631554d2942a6b">HE2NEncrypter</a>, <a class="el" href="classHE1Encrypter.html#a05627c66faf89c133a24fa7bb4553ef2">HE1Encrypter</a>, and <a class="el" href="classHE2Encrypter.html#a8cdf863bfbe046b4e57322adf5addddb">HE2Encrypter</a>.</p>
 
 </div>
 </div>

@@ -226,6 +226,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Generate the cipher parameters common to HE1 and HE1N cipher </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lambda</td><td>The bit length of the secret key, p </td></tr>
+    <tr><td class="paramname">eta</td><td>The bit length of the prime q where the public modulus is pq </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -251,6 +258,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Write the public cipher parameters to a JSON string </p><dl class="section return"><dt>Returns</dt><dd>JSON string </dd></dl>
 
 <p>Implements <a class="el" href="classHOMEncipher.html#abf176e3fb85de6f0f6a2c96563397d39">HOMEncipher&lt; NTL::ZZ_p, NTL::ZZ &gt;</a>.</p>
 
@@ -276,6 +284,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The number one as a multiprecision integer </p>
 
 </div>
 </div>
@@ -298,6 +307,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The secret key, <code>p</code>, as a modulo integer. This is a pointer to avoid pmod being initialised mod zero. </p>
 
 </div>
 </div>

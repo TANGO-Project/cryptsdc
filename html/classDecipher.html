@@ -88,7 +88,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6b8c369eda2d7e17fa90cb594cf41b6"><td class="memItemLeft" align="right" valign="top">virtual P&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDecipher.html#ac6b8c369eda2d7e17fa90cb594cf41b6">decrypt</a> (C &amp;ciphertext)=0</td></tr>
 <tr class="separator:ac6b8c369eda2d7e17fa90cb594cf41b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename C, typename P&gt;<br />
+class Decipher&lt; C, P &gt;</h3>
+
+<p>Interface implemented by all deciphering classes in this library </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">C</td><td>Ciphertext type </td></tr>
+    <tr><td class="paramname">P</td><td>Plaintext type </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a08c3ce832e3884da97f36fcfac6f70db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08c3ce832e3884da97f36fcfac6f70db">&#9670;&nbsp;</a></span>Decipher()</h2>
 
@@ -169,8 +180,15 @@ template&lt;typename C, typename P&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Decrypts a ciphertext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ciphertext</td><td>Ciphertext value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Plaintext value </dd></dl>
 
-<p>Implemented in <a class="el" href="classSSEDecrypter.html#afc1522b78aed502f8ca94163fc030ffa">SSEDecrypter</a>, <a class="el" href="classPolyACDDecrypter.html#a96626f2c267d9cc4b18ed25cb584d982">PolyACDDecrypter</a>, <a class="el" href="classDETDecrypter.html#ac317ce154d64eb1fce4450c2b03a12d9">DETDecrypter</a>, <a class="el" href="classGACDDecrypter.html#a92f6afd3d0a43dd5538cf6a83398ee33">GACDDecrypter</a>, <a class="el" href="classHE1NDecrypter.html#a8e49ff8292a76884f328c566f4d1b646">HE1NDecrypter</a>, <a class="el" href="classHE2NDecrypter.html#aa92e4ddf62a0f2c4199722983e28b0c9">HE2NDecrypter</a>, <a class="el" href="classHE1Decrypter.html#a28cc03e8a37f321b8f805cc04b2e69e0">HE1Decrypter</a>, and <a class="el" href="classHE2Decrypter.html#a766f96cb2277fd3e4af59ca44a32d519">HE2Decrypter</a>.</p>
+<p>Implemented in <a class="el" href="classSSEDecrypter.html#afc1522b78aed502f8ca94163fc030ffa">SSEDecrypter</a>, <a class="el" href="classPolyACDDecrypter.html#a96626f2c267d9cc4b18ed25cb584d982">PolyACDDecrypter</a>, <a class="el" href="classDETDecrypter.html#ac317ce154d64eb1fce4450c2b03a12d9">DETDecrypter</a>, <a class="el" href="classHE1NDecrypter.html#a8e49ff8292a76884f328c566f4d1b646">HE1NDecrypter</a>, <a class="el" href="classGACDDecrypter.html#a92f6afd3d0a43dd5538cf6a83398ee33">GACDDecrypter</a>, <a class="el" href="classHE2NDecrypter.html#aa92e4ddf62a0f2c4199722983e28b0c9">HE2NDecrypter</a>, <a class="el" href="classHE1Decrypter.html#a28cc03e8a37f321b8f805cc04b2e69e0">HE1Decrypter</a>, and <a class="el" href="classHE2Decrypter.html#a766f96cb2277fd3e4af59ca44a32d519">HE2Decrypter</a>.</p>
 
 </div>
 </div>
@@ -199,8 +217,14 @@ template&lt;typename C, typename P&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Reads the cipher secrets in from a JSON string </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>JSON string </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implemented in <a class="el" href="classSSEDecrypter.html#a1bdc685b8ea9c5bcc2b29f0c9a3ca7bf">SSEDecrypter</a>, <a class="el" href="classPolyACDDecrypter.html#a55e7f81c6d8d10e00e072547ac68239a">PolyACDDecrypter</a>, <a class="el" href="classGACDDecrypter.html#a7634cc069e61c1a3cf2443fed7c2b15f">GACDDecrypter</a>, <a class="el" href="classDETDecrypter.html#a8e32703400ead9c35a80549b011307d7">DETDecrypter</a>, <a class="el" href="classHE1NDecrypter.html#a323f074a37cb4ebfbcfca4b6bdfb6737">HE1NDecrypter</a>, <a class="el" href="classHE2NDecrypter.html#a92b463d8e18d2f06d0680528edfd49c4">HE2NDecrypter</a>, <a class="el" href="classHE1Decrypter.html#af60ccc6d0afe7555a9d1468ad7047733">HE1Decrypter</a>, and <a class="el" href="classHE2Decrypter.html#a9cf1a6eae2667f6e891237589c4eeda0">HE2Decrypter</a>.</p>
+<p>Implemented in <a class="el" href="classSSEDecrypter.html#a1bdc685b8ea9c5bcc2b29f0c9a3ca7bf">SSEDecrypter</a>, <a class="el" href="classPolyACDDecrypter.html#a55e7f81c6d8d10e00e072547ac68239a">PolyACDDecrypter</a>, <a class="el" href="classDETDecrypter.html#a8e32703400ead9c35a80549b011307d7">DETDecrypter</a>, <a class="el" href="classGACDDecrypter.html#a7634cc069e61c1a3cf2443fed7c2b15f">GACDDecrypter</a>, <a class="el" href="classHE1NDecrypter.html#a323f074a37cb4ebfbcfca4b6bdfb6737">HE1NDecrypter</a>, <a class="el" href="classHE2NDecrypter.html#a92b463d8e18d2f06d0680528edfd49c4">HE2NDecrypter</a>, <a class="el" href="classHE1Decrypter.html#af60ccc6d0afe7555a9d1468ad7047733">HE1Decrypter</a>, and <a class="el" href="classHE2Decrypter.html#a9cf1a6eae2667f6e891237589c4eeda0">HE2Decrypter</a>.</p>
 
 </div>
 </div>

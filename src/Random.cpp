@@ -3,6 +3,11 @@
 #include <cryptopp/osrng.h>
 #include <cryptopp/rng.h>
 
+/**
+ * Generate a multiprecion integer in the range 0 to \c range-1
+ * @param range The maximum value of a random integer produced is \c range-1
+ * @return A multiprecion integer in the range 0 to \c range-1
+ */
 NTL::ZZ Random::nextBigInteger(NTL::ZZ& range)
 {
 	int numBytes = NTL::NumBytes(range);

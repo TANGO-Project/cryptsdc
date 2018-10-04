@@ -194,6 +194,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Initialise cipher by generating cipher parameters such that <code>p</code> is a <code>lambda</code> bit prime, <code>q</code> is an <code>eta</code> bit prime, and <code>kappa</code> is a <code>nu</code> bit prime. The public modulus for arithmetic operations on ciphertexts is <code>pq</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lambda</td><td>Bit length of secret modulus <code>p</code> (security parameter) </td></tr>
+    <tr><td class="paramname">eta</td><td>Bit length of secret prime <code>q</code> </td></tr>
+    <tr><td class="paramname">nu</td><td>Bit length of secret prime <code>kappa</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -234,6 +242,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Initialise cipher by generating cipher parameters so that <code>p</code> and <code>kappa</code> are large enough to accommodate a degree <code>d</code> multivariate polynomial computed over <code>n</code> <code>rhoprime%-bit</code> integers and <code>q</code> is large enough so that <code>pq</code> cannot be factored in polynomial time. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>total number of inputs </td></tr>
+    <tr><td class="paramname">d</td><td>degree of polynomial to compute </td></tr>
+    <tr><td class="paramname">rho</td><td>bit length of inputs, e.g for 32-bit integers <code>rho</code> = 32 </td></tr>
+    <tr><td class="paramname">rhoprime</td><td>The effective entropy (bit lengths) of the inputs after encryption. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -262,6 +279,13 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Initialises the cipher using pre-existing cipher secrets and parameters </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secrets</td><td>A JSON string </td></tr>
+    <tr><td class="paramname">parameters</td><td>A JSON string </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -287,6 +311,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Default destructor </p>
 
 </div>
 </div>
@@ -314,6 +339,13 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Encrypt a plaintext </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext</td><td>A plaintext value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A ciphertext value </dd></dl>
 
 <p>Implements <a class="el" href="classEncipher.html#aaf8138eb280608bfd03c6eb762ffc010">Encipher&lt; NTL::ZZ_p, NTL::ZZ &gt;</a>.</p>
 
@@ -333,6 +365,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the cipher keys p and kappa as a vector </p><dl class="section return"><dt>Returns</dt><dd>A 2-vector </dd></dl>
 
 </div>
 </div>
@@ -358,6 +391,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Writes cipher secrets out to a JSON string </p><dl class="section return"><dt>Returns</dt><dd>JSON string </dd></dl>
 
 <p>Implements <a class="el" href="classEncipher.html#a27d3efa1e364c1f0d7def65454c61b85">Encipher&lt; NTL::ZZ_p, NTL::ZZ &gt;</a>.</p>
 
@@ -383,6 +417,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The cipher "noise" parameter </p>
 
 </div>
 </div>
@@ -405,6 +440,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Kappa as a modulo integer. This is a pointer to avoid kappamod being initialised mod zero </p>
 
 </div>
 </div>

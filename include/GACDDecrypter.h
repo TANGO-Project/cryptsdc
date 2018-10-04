@@ -13,10 +13,13 @@
 
 class GACDDecrypter: public Decipher<NTL::ZZ,NTL::ZZ>{
 private:
+	/**
+	 * Secret key, \c k, a large integer
+	 */
 	NTL::ZZ k;
 public:
-	GACDDecrypter();
-	virtual ~GACDDecrypter();
+	GACDDecrypter(){};
+	virtual ~GACDDecrypter(){};
 	NTL::ZZ decrypt(NTL::ZZ& ciphertext) override;
     void readSecretsFromJSON(std::string& secrets) override;
 };
