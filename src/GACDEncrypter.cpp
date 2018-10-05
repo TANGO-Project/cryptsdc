@@ -10,7 +10,8 @@
 #include <jsoncpp/json/json.h>
 #include "GACDEncrypter.h"
 
-GACDEncrypter::GACDEncrypter(int lambda) {
+GACDEncrypter::GACDEncrypter(int bits) {
+	int lambda = ceil(8.0*bits/3);
 	k = NTL::RandomPrime_ZZ(lambda, 20);
 	NTL::RR kreal = to_RR(k);
 	minr = RoundToZZ(sqrt(sqrt(power(kreal,3)))); // minr = k^{3/4}
