@@ -100,7 +100,7 @@ int main(){
 	NTL::ZZ ope_m2 = NTL::RandomBits_ZZ(bits);
 
 	std::cout << "GACD consistency test: ";
-	GACDEncrypter GACDenc(bits);
+	GACDEncrypter GACDenc(GACDEncrypter::getMinimumKeyLength(bits));
 	std::string GACDsecrets = GACDenc.writeSecretsToJSON();
 	NTL::ZZ GACDencrypted1 = GACDenc.encrypt(ope_m1);
 
